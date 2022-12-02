@@ -2,12 +2,12 @@ const data = [
   {
     id: 1,
     name: "Máy đóng đinh.",
-    img: "./img/products/Dinh/thuong.jpg",
+    img: "./img/products/Dinh/thuong.JPG",
     children: [
       {
         idProduct: 1,
         name: "Máy đóng đinh.",
-        img: "./img/products/Dinh/thuong.jpg",
+        img: "./img/products/Dinh/thuong.JPG",
         key: "Máy đóng đinh.",
         characteristics: [
           {
@@ -22,12 +22,12 @@ const data = [
   {
     id: 2,
     name: "Máy đóng đinh (bản nâng cấp).",
-    img: "./img/products/Dinh/maynangcap.jpg",
+    img: "./img/products/Dinh/maynangcap.JPG",
     children: [
       {
         idProduct: 1,
         name: "Máy đóng đinh (bản nâng cấp).",
-        img: "./img/products/Dinh/maynangcap.jpg",
+        img: "./img/products/Dinh/maynangcap.JPG",
         key: "Máy đóng đinh (bản nâng cấp).",
         characteristics: [
           {
