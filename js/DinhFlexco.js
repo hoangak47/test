@@ -2,12 +2,12 @@ const data = [
   {
     id: 1,
     name: "Máy đóng đinh.",
-    img: "./img/products/Dinh/thuong.JPG",
+    img: "./img/products/Dinh/thuong.jpg",
     children: [
       {
         idProduct: 1,
         name: "Máy đóng đinh.",
-        img: "./img/products/Dinh/thuong.JPG",
+        img: "./img/products/Dinh/thuong.jpg",
         key: "Máy đóng đinh.",
         characteristics: [
           {
@@ -22,12 +22,12 @@ const data = [
   {
     id: 2,
     name: "Máy đóng đinh (bản nâng cấp).",
-    img: "./img/products/Dinh/maynangcap.JPG",
+    img: "./img/products/Dinh/maynangcap.jpg",
     children: [
       {
         idProduct: 1,
         name: "Máy đóng đinh (bản nâng cấp).",
-        img: "./img/products/Dinh/maynangcap.JPG",
+        img: "./img/products/Dinh/maynangcap.jpg",
         key: "Máy đóng đinh (bản nâng cấp).",
         characteristics: [
           {
@@ -42,12 +42,12 @@ const data = [
   {
     id: 3,
     name: "Đinh xương cá.",
-    img: "./img/products/Dinh/xuongca.JPG",
+    img: "./img/products/Dinh/xuongca.jpg",
     children: [
       {
         idProduct: 1,
         name: "Đinh xương cá.",
-        img: "./img/products/Dinh/xuongca.JPG",
+        img: "./img/products/Dinh/xuongca.jpg",
         key: "Đinh xương cá.",
         characteristics: [
           {
@@ -59,7 +59,7 @@ const data = [
       {
         idProduct: 2,
         name: "Đinh xương cá 2 .",
-        img: "./img/products/Dinh/xuongca.JPG",
+        img: "./img/products/Dinh/xuongca.jpg",
         key: "Đinh xương cá.",
         characteristics: [
           {
@@ -71,7 +71,7 @@ const data = [
       {
         idProduct: 3,
         name: "Đinh xương cá 3.",
-        img: "./img/products/Dinh/xuongca.JPG",
+        img: "./img/products/Dinh/xuongca.jpg",
         key: "Đinh xương cá.",
         characteristics: [
           {
@@ -86,12 +86,12 @@ const data = [
   {
     id: 4,
     name: "Đinh dẹp nối băng tải.",
-    img: "./img/products/Dinh/dinhdepnoibangtai.JPG",
+    img: "./img/products/Dinh/dinhdepnoibangtai.jpg",
     children: [
       {
         idProduct: 1,
         name: "Đinh dẹp nối băng tải.",
-        img: "./img/products/Dinh/dinhdepnoibangtai.JPG",
+        img: "./img/products/Dinh/dinhdepnoibangtai.jpg",
         key: "Đinh dẹp nối băng tải.",
         characteristics: [
           {
@@ -103,7 +103,7 @@ const data = [
       {
         idProduct: 2,
         name: "Đinh xương cá 2 .",
-        img: "./img/products/Dinh/dinhdepnoibangtai.JPG",
+        img: "./img/products/Dinh/dinhdepnoibangtai.jpg",
         key: "Đinh dẹp nối băng tải.",
         characteristics: [
           {
@@ -115,7 +115,7 @@ const data = [
       {
         idProduct: 3,
         name: "Đinh xương cá 3.",
-        img: "./img/products/Dinh/dinhdepnoibangtai.JPG",
+        img: "./img/products/Dinh/dinhdepnoibangtai.jpg",
         key: "Đinh dẹp nối băng tải.",
         characteristics: [
           {
@@ -130,12 +130,12 @@ const data = [
   {
     id: 5,
     name: "Đinh bản lề RS125.",
-    img: "./img/products/Dinh/banlers125.JPG",
+    img: "./img/products/Dinh/banlers125.jpg",
     children: [
       {
         idProduct: 1,
         name: "Đinh bản lề RS125.",
-        img: "./img/products/Dinh/banlers125.JPG",
+        img: "./img/products/Dinh/banlers125.jpg",
         key: "Đinh bản lề RS125.",
         characteristics: [
           {
@@ -147,7 +147,7 @@ const data = [
       {
         idProduct: 2,
         name: "Đinh bản lề RS125 2 .",
-        img: "./img/products/Dinh/banlers125.JPG",
+        img: "./img/products/Dinh/banlers125.jpg",
         key: "Đinh bản lề RS125.",
         characteristics: [
           {
@@ -159,7 +159,7 @@ const data = [
       {
         idProduct: 3,
         name: "Đinh bản lề RS125 3.",
-        img: "./img/products/Dinh/banlers125.JPG",
+        img: "./img/products/Dinh/banlers125.jpg",
         key: "Đinh bản lề RS125.",
         characteristics: [
           {
@@ -174,12 +174,12 @@ const data = [
   {
     id: 6,
     name: "Đinh bản lề nhựa.",
-    img: "./img/products/Dinh/banlenhua4.JPG",
+    img: "./img/products/Dinh/banlenhua4.jpg",
     children: [
       {
         idProduct: 1,
         name: "Đinh bản lề nhựa.",
-        img: "./img/products/Dinh/banlenhua4.JPG",
+        img: "./img/products/Dinh/banlenhua4.jpg",
         key: "Đinh bản lề nhựa.",
         characteristics: [
           {
@@ -191,7 +191,7 @@ const data = [
       {
         idProduct: 2,
         name: "Đinh bản lề nhựa 2 .",
-        img: "./img/products/Dinh/banlenhua4.JPG",
+        img: "./img/products/Dinh/banlenhua4.jpg",
         key: "Đinh bản lề nhựa.",
         characteristics: [
           {
@@ -203,7 +203,7 @@ const data = [
       {
         idProduct: 3,
         name: "Đinh bản lề nhựa 3.",
-        img: "./img/products/Dinh/banlenhua4.JPG",
+        img: "./img/products/Dinh/banlenhua4.jpg",
         key: "Đinh bản lề nhựa.",
         characteristics: [
           {
