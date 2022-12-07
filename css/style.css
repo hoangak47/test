@@ -2725,6 +2725,9 @@ ul.product-controls {
   .service-section .row {
     flex-direction: column-reverse;
   }
+  .modal {
+    padding: 20px;
+  }
 }
 
 /* Large Mobile : 480px */
