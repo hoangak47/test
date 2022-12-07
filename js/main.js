@@ -33,28 +33,28 @@ const dataChatBox = [
 const dataSlider = [
   {
     img: "./img/slide/slide-1.jpg",
-    title: "New Collection",
-    content: "New Arrivals",
+    title: "Thế Cao",
+    content: "",
   },
   {
     img: "./img/slide/slide-2.jpg",
-    title: "New Collection",
-    content: "New Arrivals",
+    title: "Thế Cao",
+    content: "",
   },
   {
     img: "./img/slide/slide-3.jpg",
-    title: "New Collection",
-    content: "New Arrivals",
+    title: "Thế Cao",
+    content: "",
   },
   {
     img: "./img/slide/slide-4.jpg",
-    title: "New Collection",
-    content: "New Arrivals",
+    title: "Thế Cao",
+    content: "",
   },
   {
     img: "./img/slide/slide-5.jpg",
-    title: "New Collection",
-    content: "New Arrivals",
+    title: "Thế Cao",
+    content: "",
   },
 ];
 /*  --------------------------------------------------- data end -------------------------  */
@@ -74,7 +74,8 @@ function createSlide() {
               <div class="col-lg-12">
                   <h1>${item.title}</h1>
                   <h2>${item.content}</h2>
-                  <a href="#" class="primary-btn">See More</a>
+                  <!-- 
+                  <a href="#" class="primary-btn">See More</a> -->
               </div>
           </div>
       </div>

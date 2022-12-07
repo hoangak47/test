@@ -62,11 +62,26 @@ function dragImageEnd(index, e) {
       if (index > 0) {
         sliderMiniItem[index - 1].style.marginLeft = 0 + "%";
       }
+      if (index <= 0) {
+        break;
+      }
+      document
+        .querySelectorAll(".dot-slide-mini span")
+        [index].classList.remove("active");
+      document
+        .querySelectorAll(".dot-slide-mini span")
+        [index - 1].classList.add("active");
     }
   } else {
     for (let i = 0; i - 1 < index; i++) {
       if (index < sliderMiniItem.length - 1) {
         sliderMiniItem[i].style.marginLeft = "-100%";
+        document
+          .querySelectorAll(".dot-slide-mini span")
+          [i].classList.remove("active");
+        document
+          .querySelectorAll(".dot-slide-mini span")
+          [i + 1].classList.add("active");
       }
     }
   }
@@ -87,6 +102,10 @@ function dragImage(e) {
     }
   }
 }
+
+function pointSlideMini(index) {}
+
+pointSlideMini(3);
 
 function startSlideMini() {
   sliderMiniItem.forEach((item, index) => {
