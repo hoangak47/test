@@ -598,7 +598,7 @@ c-166.4,0-301.3-134.9-301.3-301.3V480.2C188.1,313.8,323,178.9,489.4,178.9z" />
     </div>
     <div class="chat-box-message">
         <a href="https://zalo.me/${item.zalo}" target="_blank" title="${item.name}">
-            <p>${item.phone} - ${item.title}. ${item.name}</p>
+            <p>${item.phone} - ${item.title}.${item.name}</p>
         </a>
     </div>
 </li>`;
