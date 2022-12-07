@@ -2376,7 +2376,7 @@ ul.product-controls {
   text-align: justify;
   padding: 10px 10px 0;
   text-indent: 20px;
-  background-color: #b0bcc266;
+  background-color: #cdcdcd;
   color: var(--main-color);
   font-weight: 500;
 }
@@ -2388,7 +2388,7 @@ ul.product-controls {
 .chat-box-content ul {
   height: 70%;
   overflow-y: auto;
-  padding-top: 40px;
+  padding: 40px 0;
 }
 
 .chat-box-content ul li {
