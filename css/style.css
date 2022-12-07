@@ -470,6 +470,12 @@ ol {
 .inner-header .main-menu ul li .sub-menu li {
   display: block;
   margin: 0;
+  transition: all 0.2s;
+}
+
+.inner-header .main-menu ul li .sub-menu li:hover {
+  background: #f5f5f5;
+  box-shadow: 0 0 0 5px #f5f5f5;
 }
 
 .inner-header .main-menu ul li .sub-menu li a {
@@ -1073,6 +1079,45 @@ ul.product-controls {
 
 .service-list p {
   font-size: 18px;
+}
+
+.service-section .single-slider-item {
+  padding: 0;
+}
+
+.service-section .owl-nav {
+  display: none;
+}
+
+.service-section .hero-items .owl-dots button {
+  width: 35px;
+  border-radius: 0;
+}
+
+.service-section iframe {
+  display: none;
+}
+
+.service-section .slider-mini {
+  display: flex;
+  height: 100%;
+  flex-flow: wrap;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.slider-mini-item {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease;
+}
+
+.service-section .service-item {
+  cursor: pointer;
 }
 
 /*---------------------
@@ -2232,6 +2277,7 @@ ul.product-controls {
 }
 .chat-box.show {
   bottom: 0;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
 }
 .chat-box .chat-box-title {
   width: 200px;
@@ -2261,6 +2307,7 @@ ul.product-controls {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  position: relative;
 }
 
 .chat-box-content.show {
@@ -2294,6 +2341,50 @@ ul.product-controls {
 
 .chat-box-content.show ~ .chat-box-close {
   display: flex;
+}
+
+.chat-box-content.show > p {
+  position: absolute;
+  bottom: 0;
+  margin: unset;
+  text-align: justify;
+  padding: 10px 10px 0;
+  text-indent: 20px;
+  background-color: #b0bcc266;
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+.chat-box-avatar {
+  width: 60px;
+}
+
+.chat-box-content ul {
+  height: 70%;
+  overflow-y: auto;
+  padding-top: 40px;
+}
+
+.chat-box-content ul li {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.chat-box-message {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.chat-box-message a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-box-message a p {
+  margin: unset;
 }
 
 /*--------------------- Modal -----------------------*/
@@ -2406,6 +2497,26 @@ ul.product-controls {
 
 .modal .close:hover {
   opacity: 1;
+}
+
+/*--------------------- SVG -----------------------*/
+.st0 {
+  fill: #fdfefe;
+}
+
+.st1 {
+  fill: #0180c7;
+}
+
+.st2 {
+  fill: #0172b1;
+}
+
+.st3 {
+  fill: none;
+  stroke: #0180c7;
+  stroke-width: 10.8658;
+  stroke-miterlimit: 54.3289;
 }
 
 /* ---------------------------------- Responsive Media Styles ---------------------------------*/
@@ -2576,6 +2687,10 @@ ul.product-controls {
   .col-product-image {
     height: 35%;
   }
+
+  .service-section .slider-mini {
+    height: 350px;
+  }
 }
 
 /* Large Mobile : 480px */
@@ -2738,7 +2853,7 @@ ul.product-controls {
   }
 
   .chat-box-content.show {
-    height: 50vh;
+    height: 45vh;
   }
 
   .chat-box .chat-box-title,
@@ -2752,6 +2867,9 @@ ul.product-controls {
 
   .col-product-image {
     height: 35%;
+  }
+  .service-section .slider-mini {
+    height: 350px;
   }
 }
 

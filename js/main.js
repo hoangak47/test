@@ -7,7 +7,85 @@
     Created: Colorlib
 ---------------------------------------------------------  */
 
-"use strict";
+/*  --------------------------------------------------- data -------------------------  */
+
+const dataChatBox = [
+  {
+    name: "Phượng",
+    title: "Mrs",
+    phone: "0938 791 097",
+    zalo: "0938791097",
+  },
+  {
+    name: "Phương",
+    title: "Mrs",
+    phone: "0909 673 260",
+    zalo: "0909673260",
+  },
+  {
+    name: "Hà",
+    title: "Mrs",
+    phone: "0934 833 585",
+    zalo: "0934833585",
+  },
+];
+
+const dataSlider = [
+  {
+    img: "./img/slide/slide-1.jpg",
+    title: "New Collection",
+    content: "New Arrivals",
+  },
+  {
+    img: "./img/slide/slide-2.jpg",
+    title: "New Collection",
+    content: "New Arrivals",
+  },
+  {
+    img: "./img/slide/slide-3.jpg",
+    title: "New Collection",
+    content: "New Arrivals",
+  },
+  {
+    img: "./img/slide/slide-4.jpg",
+    title: "New Collection",
+    content: "New Arrivals",
+  },
+  {
+    img: "./img/slide/slide-5.jpg",
+    title: "New Collection",
+    content: "New Arrivals",
+  },
+];
+/*  --------------------------------------------------- data end -------------------------  */
+
+("use strict");
+
+/*-------------------
+		create slide
+	--------------------- */
+
+function createSlide() {
+  let renderData = "";
+  dataSlider.map((item) => {
+    renderData += `<div class="single-slider-item set-bg" data-setbg="${item.img}">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <h1>${item.title}</h1>
+                  <h2>${item.content}</h2>
+                  <a href="#" class="primary-btn">See More</a>
+              </div>
+          </div>
+      </div>
+  </div>`;
+  });
+  document.querySelector(".hero-slider .hero-items").innerHTML = renderData;
+}
+
+try {
+  createSlide();
+} catch (error) {}
 
 (function ($) {
   /*------------------
@@ -170,172 +248,6 @@
   });
 })(jQuery);
 
-/*  ---------------
-    tab
------------------ */
-
-const dataTab = [
-  {
-    id: 0,
-    title: "PVC",
-    content: `<span><strong>Băng tải PVC</strong> là loại băng tải tiêu chuẩn trong mọi ngành nghề
-    và cả
-    ngành thực phẩm có
-    thể được sử dụng cho các ứng dụng cơ bản trong chế biến và xử lý thực phẩm. <br><br>
-
-    <strong>PVC</strong> đã phát triển trở thành loại nhựa được sản xuất rộng rãi thứ ba,
-    được biết đến với
-    độ bền và dễ sử dụng.<br><br>
-
-    Băng tải bọc <strong>PVC</strong> phù hợp nhất cho việc xử lý vật liệu, ứng dụng sản
-    xuất bánh mì và chế
-    biến thịt, cá và sữa.<br><br>
-
-    Với khả năng chống mài mòn hạn chế và khả năng chống dung môi, dầu và mỡ hạn chế, dây
-    đai <strong>PVC</strong> phù hợp nhất để chế biến rau quả và các hoạt động đơn giản hơn
-    với các yêu cầu
-    đặc biệt hạn chế.<br><br>
-    Những đai chống tĩnh điện này cung cấp khả năng chống hóa chất tốt, đồng thời có khả
-    năng chống nước nóng và hơi nước. Dựa trên nhu cầu cụ thể và các nhà sản xuất băng tải,
-    cũng có các mô hình chống cháy có sẵn.<br><br>
-
-    Đối với những người không biết về thông số kỹ thuật để chế biến thực phẩm của họ, băng
-    tải <strong>PVC</strong> là sự lựa chọn đáng tin cậy và có giá thành ưu đãi so với các
-    loại băng tải khác
-    như PU VÀ TPU
-</span>`,
-  },
-  {
-    id: 1,
-    title: "PU",
-    content: `<span><strong>Băng tải PU</strong> còn được gọi là băng tải polyurethane, nó rất giống với
-    băng tải PVC, cả
-    hai đều là băng tải công nghiệp. Nhiều người không biết nên chọn dây đai PU hay dây đai
-    PVC. Trên thực tế, điểm khác biệt chính của chúng nằm ở chất liệu. Không có vấn đề tốt
-    hay xấu, chỉ là nó có phù hợp với ngành công nghiệp và thiết bị ban đầu hay không. Nếu
-    bạn đang vận chuyển thực phẩm, như bánh kẹo, mì, thịt, hải sản, đồ nướng,… thì sự lựa
-    chọn hàng đầu là <strong>băng tải PU</strong>. những ưu điểm của dây đai PU so với dây
-    đai PVC. <br><br>
-    <strong>Không có mùi</strong><br>
-    Dây đai PVC có mùi nặng. còn <strong>băng tải PU</strong> được làm bằng PU
-    (polyurethane) như bề mặt cao
-    su của nó, nó không có mùi đặc biệt. Khi tiếp xúc với thực phẩm, nó sẽ không tạo ra bất
-    kỳ mùi đặc biệt nào.<br><br>
-
-    <strong>Tiếp xúc trực tiếp với thức ăn</strong><br>
-    <strong>Băng tải PU</strong> có độ trong suốt và sạch sẽ, phù hợp với chứng nhận cấp
-    thực phẩm của FDA,
-    có thể tiếp xúc trực tiếp với thực phẩm, có khả năng chống thấm dầu, rửa, cắt.<br><br>
-
-    <strong>Xanh (Bảo vệ môi trường)</strong><br>
-    <strong>Băng tải PU</strong> thân thiện với môi trường hơn băng tải PVC, vì PU
-    (polyurethane) là vật liệu
-    có thể bị phân hủy bởi tự nhiên nên còn được gọi là vật liệu xanh.<br><br>
-    <strong>Bền hơn</strong><br>
-    Về độ bền, <strong>băng tải PU</strong> có khả năng chống cắt tốt hơn băng tải PVC. Và
-    <strong>băng tải PU</strong> cũng
-    có thể được sử dụng cho công việc cắt nhiều lần trên máy cắt ở một độ dày nhất
-    định.<br><br>
-
-    <strong><strong>Băng tải PU</strong> phục hồi nhanh hơn</strong> <br>
-    <strong>Băng tải PU</strong> được xử lý đặc biệt: vải polyurethane tổng hợp có độ bền
-    cao được sử dụng
-    làm khung chịu lực, và lớp sơn phủ được làm từ nhựa polyurethane (PU). Nó không chỉ có
-    các đặc điểm của độ bền kéo cao, uốn cong tốt, nhẹ, mỏng và dẻo dai của băng tải thông
-    thường.
-</span>`,
-  },
-  {
-    id: 2,
-    title: "TPU",
-    content: `<span>
-    Các loại vật liệu khác cho băng tải công nghiệp thực phẩm là Polyurethane nhiệt dẻo
-    (<strong>TPU</strong>). <strong>TPU</strong> có thể cực kỳ hữu ích cho các ứng dụng hiệu
-    suất cao vì nó cung cấp các đặc
-    tính thiết yếu mà nhiều loại polyme tương tự khác không có.
-
-    <br><br>
-
-    Mặc dù băng tải <strong>TPU</strong> được phân thành nhiều loại khác nhau như ( PU ) dựa
-    trên bản chất
-    của chúng, nhưng các đặc điểm chung của chúng bao gồm khả năng chống mài mòn và độ bền
-    cao đối với dầu mỡ thực vật, động vật và khoáng sản.<br><br>
-
-    Đai <strong>TPU</strong> có bề mặt nhẵn để giảm cặn vi khuẩn và dễ dàng quá trình làm
-    sạch dây đai. Mặc
-    dù vật liệu tương đối đắt tiền cho băng tải <strong>TPU</strong>, nó rất thích hợp cho
-    một loạt các quy
-    trình thực phẩm hiện đại có yêu cầu đặc biệt đối với thực phẩm tiếp xúc trực tiếp với
-    băng tải.<br><br>
-
-    <strong>TPU</strong> là một loại băng tải cải tiến ban đầu được thiết kế để cải thiện vệ
-    sinh và giảm chi
-    phí làm sạch trong sản xuất thực phẩm công nghiệp. Chất liệu sản phẩm không chứa chất
-    hóa dẻo và không làm ô nhiễm hàng hóa trong quá trình vận chuyển. Đặc tính chống cắt và
-    chống mài mòn cũng giúp <strong>TPU</strong> có thể áp dụng cho nhiều lĩnh vực công
-    nghiệp khác nhau
-    ngoài chế biến thực phẩm. ngoài ra <strong>TPU</strong> được gia cố bằng dây aramid làm
-    thành viên chịu
-    lực và đảm bảo không bị giãn. Chúng là những chiếc thắt lưng mạnh nhất trên thị
-    trường!<br><br>
-
-    <strong>TPU</strong> là một sản phẩm rất linh hoạt. Các trường hợp sử dụng phổ biến ngày
-    nay là trong các
-    quy trình phân chia nhỏ của ngành công nghiệp thịt, sản xuất pho mát, chế biến thủy sản,
-    cũng như xử lý thực phẩm đông lạnh. Các ngành như Gia cầm, Heo, Thịt bò, Phô mai, Cá và
-    Rau quả, nhưng đặc tính vật liệu cũng cho phép sử dụng rộng rãi hơn nhiều trong các ứng
-    dụng khác.
-
-</span>`,
-  },
-];
-
-$(".product-filter .product-controls li.product--controls-tab").each(function (
-  index,
-  item
-) {
-  item.style.zIndex = dataTab.length - index;
-
-  $(this).on("click", function () {
-    $(".product-filter .product-controls li.product--controls-tab").removeClass(
-      "active"
-    );
-    $(this).addClass("active");
-
-    document.querySelector(".section-detail").classList.remove("show");
-    $(".product-filter .product-controls li.product--controls-tab").each(
-      function (index, item) {
-        item.style.zIndex = dataTab.length - index;
-      }
-    );
-
-    item.style.zIndex = null;
-    const detail = document.querySelector(".section-detail");
-    const title = document.querySelector(".section-title h3");
-    const titleProductList = document.querySelector(".product-list-title");
-
-    if (title.innerText === dataTab[index].title) {
-      return;
-    }
-
-    detail.style.opacity = 0;
-    title.style.opacity = 0;
-    titleProductList.style.opacity = 0;
-
-    setTimeout(() => {
-      detail.innerHTML = dataTab[index].content;
-      detail.style.opacity = 1;
-
-      title.innerHTML = dataTab[index].title;
-      title.style.opacity = 1;
-
-      document.querySelector(".product-list-title span").innerHTML =
-        dataTab[index].title;
-      titleProductList.style.opacity = 1;
-    }, 300);
-  });
-});
-
 try {
   document.querySelector(".show-more").addEventListener("click", function () {
     document.querySelector(".section-detail").classList.toggle("show");
@@ -346,6 +258,10 @@ try {
     }
   });
 } catch (error) {}
+
+/*-------------------
+		create Logo
+	--------------------- */
 
 function createLogo() {
   const logo = document.createElement("div");
@@ -360,11 +276,13 @@ function createLogo() {
   document.querySelector(".slicknav_menu").appendChild(logo);
 }
 
-createLogo();
-
 const chatBoxTitle = document.querySelector(".chat-box-title");
 const chatBox = document.querySelector(".chat-box");
 const chatBoxContent = document.querySelector(".chat-box-content");
+
+/*-------------------
+		open Chatbox
+	--------------------- */
 
 function openChatbox() {
   chatBoxTitle.addEventListener("click", function () {
@@ -374,6 +292,9 @@ function openChatbox() {
   });
 }
 
+/*-------------------
+		close Chatbox
+	--------------------- */
 function closeChatbox() {
   document
     .querySelector(".chat-box-close")
@@ -384,6 +305,10 @@ function closeChatbox() {
     });
 }
 
+/*-------------------
+		pressKey
+	--------------------- */
+
 function pressKey(e) {
   if (e.keyCode === 27) {
     document.querySelector(".modal").classList.remove("show");
@@ -391,6 +316,10 @@ function pressKey(e) {
     document.querySelector(".details-product").remove();
   }
 }
+
+/*-------------------
+		load Data Product
+	--------------------- */
 
 function loadDataProduct() {
   data.forEach((item) => {
@@ -571,25 +500,23 @@ function loadDataProduct() {
   });
 }
 
-function closeModal() {
-  document
-    .querySelector(".modal .close")
-    .addEventListener("click", function () {
-      document.querySelector(".modal").classList.remove("show");
-      document.querySelector(".details-product").remove();
-      document.querySelector(".col-product-image").remove();
-    });
-}
+/*-------------------
+		click Outside CloseModal
+	--------------------- */
 
 function clickOutsideCloseModal() {
-  window.addEventListener("click", function (e) {
-    if (e.target == modal) {
+  document.querySelector(".modal").addEventListener("click", function (e) {
+    if (!e.target.closest(".modal-content")) {
       document.querySelector(".modal").classList.remove("show");
       document.querySelector(".details-product").remove();
       document.querySelector(".col-product-image").remove();
     }
   });
 }
+
+/*-------------------
+		close Outside ChatBox
+	--------------------- */
 
 function closeOutsideChatBox(e) {
   document.querySelector("body").addEventListener("click", function (e) {
@@ -601,10 +528,89 @@ function closeOutsideChatBox(e) {
   });
 }
 
+/*-------------------
+		create ChatBox
+	--------------------- */
+
+function createChatBox() {
+  let renderChatBox = "";
+  dataChatBox.map((item) => {
+    renderChatBox += `<li>
+    <div class="chat-box-avatar">
+        <svg class="chat-box-avatar" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2500 2372"
+            style="enable-background:new 0 0 2500 2372;" xml:space="preserve">
+            <path class="st0" d="M566.4,1939.8c-8.3-3.7-14.4-7.9-4.6-16.2c6-4.6,12.5-8.8,19-13c60.7-39.4,117.7-82.5,155.3-146
+c31.5-52.8,26.4-83.9-13-122.8C503.3,1422,406.9,1159.2,455.1,848.7c27.3-175.2,107.5-326.8,224.3-458.4
+c70.5-79.7,154.3-144.2,246.1-197.9c5.6-3.2,13.4-4.2,14.4-12.5c-1.9-4.6-5.1-3.2-7.9-3.2c-156.2,0-312.4-3.2-468.1,0.9
+c-149.3,4.6-278.1,120-277.6,285.5c0.9,483.4,0,966.9,0,1450.8c0,150.2,114.5,275.8,264.2,281.4c126.5,5.1,253.1,0.9,380.1,0.5
+c9.3,0.5,18.5,0.9,27.8,0.9h669.3c166.9,0,333.7,0.9,500.6,0c154.8,0,280.4-125.1,280.4-279.5v-2.8v-271.2c0-6.5,2.3-13.4-1.9-20.4
+c-8.3,0.5-11.6,7.4-16.2,12.1c-89.9,90.4-196.1,163.2-312.4,214.6c-285.1,125.6-575.2,134.4-869.5,33.4
+c-25.5-9.3-53.3-10.2-79.7-3.7c-38.9,9.7-77.4,21.3-115.9,32.9C800,1947.2,684.5,1962.9,566.4,1939.8L566.4,1939.8z M902.4,1158.7
+c7.9-10.2,12.1-16.2,16.7-22.2c60.7-76.9,121.4-153.9,182.2-231.3c17.6-22.2,35.2-45,46.4-71.8c13-30.6-0.9-59.3-32.4-70.5
+c-13.9-4.2-28.7-6-43.6-5.1c-82.5-0.5-165.5-0.5-248,0c-11.6,0-23.2,1.4-34.3,4.2c-26,6.5-41.7,32.9-35.2,59.3
+c4.6,17.6,18.5,31.5,36.2,35.7c11.1,2.8,22.7,4.2,34.3,3.7c50.1,0.5,100.6,0,150.6,0.5c5.6,0,12.5-3.7,16.7,4.6
+c-4.2,5.6-8.3,11.1-12.5,16.2c-71.8,90.8-143.2,182.2-215.1,273c-17.6,22.7-26.9,47.7-13.9,75.6s39.4,32.9,66.3,34.8
+c21.3,1.4,43.1,0.5,64.9,0.5c75.1,0,149.7,0.5,224.8-0.5c39.9-0.5,61.2-24.6,57-61.6c-3.2-29.2-23.2-44.5-60.3-45
+C1037.7,1158.3,972.4,1158.7,902.4,1158.7L902.4,1158.7z M1440.1,914.9c-57.9-50.5-121.9-53.8-184.5-16.7
+c-76,44.5-103.8,117.3-94.6,201.6c8.8,78.8,43.1,143.2,125.6,169.6c51.4,16.7,99.2,10.7,141.4-23.6c11.1-8.8,14.4-7,22.2,2.8
+c15.3,19.5,41.7,26.9,64.9,18.1c23.2-7,38.5-28.3,38.5-52.4c0.5-92.7,0.9-185.4,0-278.1c-0.5-37.1-35.2-60.7-71.4-53.3
+C1462.3,887.1,1451.2,900.6,1440.1,914.9L1440.1,914.9z M1761.3,1086.9c-1.9,115.9,94.1,203.5,214.6,191.4
+c110.8-11.1,182.6-94.1,178.9-211.4c-3.7-115.9-89.9-195.1-208.1-191.4C1835.9,878.8,1757.6,967.8,1761.3,1086.9z M1720.5,994.7
+c0-72.8,0.5-145.1,0-217.9c0-37.1-23.6-60.3-58.9-59.8c-34.3,0.5-57,23.6-57.5,59.3c-0.5,21.8,0,43.1,0,64.9v368.5
+c0,28.7,17.6,53.8,40.8,59.8c32,8.8,64.9-10.2,73.2-42.2c1.4-5.6,2.3-11.1,1.9-17.1C1721,1138.3,1720.5,1066.5,1720.5,994.7
+L1720.5,994.7z" />
+            <path class="st1"
+                d="M830.1,2196.1c-126.5,0-253.5,4.2-380.1-0.5c-149.7-6-264.2-131.6-264.2-281.4c0-483.4,0.9-966.9,0-1450.8
+c0-165.5,129.3-280.9,278.1-285.1c155.7-4.2,311.9-0.9,468.1-0.9c2.8,0,6.5-1.4,7.9,3.2c-0.9,8.3-9.3,9.3-14.4,12.5
+C833.8,247,749.9,311.4,679.4,391.2c-116.3,131.6-197,282.7-224.3,458.4c-48.2,310.1,48.7,573.4,267.9,793.1
+c38.9,39.4,44,70,13,122.8c-37.5,63.5-94.6,106.6-155.3,146c-6.5,3.7-13,8.3-19.5,12.5c-9.7,8.3-3.7,12.5,4.6,16.2
+c1.9,4.2,4.2,7.9,7,11.6c53.3,47.3,103.8,97.8,156.2,146c24.6,22.7,49.1,46.4,72.8,70C811.5,2176.6,827.8,2179.4,830.1,2196.1z" />
+            <path class="st2"
+                d="M830.1,2196.1c-2.3-16.2-18.5-19-28.3-28.7c-23.6-24.1-48.2-47.3-72.8-70c-52.4-48.2-102.9-98.7-156.2-146
+c-2.8-3.7-5.1-7.4-7-11.6c118.2,23.2,233.6,7.4,347.2-27.3c38.5-11.6,76.9-23.2,115.9-32.9c26.4-7,54.2-5.6,79.7,3.7
+c293.9,101,584,91.8,869.5-33.4c116.3-51.4,222.5-123.8,312.4-214.1c4.6-4.6,7.9-11.6,16.2-12.1c4.2,6.5,1.9,13.4,1.9,20.4v271.2
+c0.9,154.8-123.3,280.9-278.1,282.3h-2.3c-166.9,0.9-333.7,0-500.6,0H857.9C848.6,2196.5,839.4,2196.1,830.1,2196.1L830.1,2196.1z" />
+            <path class="st1" d="M902.4,1158.7c70,0,135.8-0.5,201.2,0c36.6,0.5,56.5,15.8,60.3,45c4.2,36.6-17.1,61.2-57,61.6
+c-75.1,0.9-149.7,0.5-224.8,0.5c-21.8,0-43.1,0.9-64.9-0.5c-26.9-1.4-53.3-7-66.3-34.8c-13-27.8-3.7-52.8,13.9-75.6
+c71.4-90.8,143.2-182.2,215.1-273c4.2-5.6,8.3-11.1,12.5-16.2c-4.6-7.9-11.1-4.2-16.7-4.6c-50.1-0.5-100.6,0-150.6-0.5
+c-11.6,0-23.2-1.4-34.3-3.7c-26.4-6-42.6-32.4-36.6-58.4c4.2-17.6,18.1-32,35.7-36.2c11.1-2.8,22.7-4.2,34.3-4.2
+c82.5-0.5,165.5-0.5,248,0c14.8-0.5,29.2,1.4,43.6,5.1c31.5,10.7,45,39.9,32.4,70.5c-11.1,26.4-28.7,49.1-46.4,71.8
+c-60.7,77.4-121.4,154.3-182.2,230.8C914.4,1142.5,909.8,1148.5,902.4,1158.7L902.4,1158.7z" />
+            <path class="st1" d="M1440.1,914.9c11.1-14.4,22.7-27.8,41.7-31.5c36.6-7.4,70.9,16.2,71.4,53.3c1.4,92.7,0.9,185.4,0,278.1
+c0,24.1-15.8,45.4-38.5,52.4c-23.2,8.8-49.6,1.9-64.9-18.1c-7.9-9.7-11.1-11.6-22.2-2.8c-42.2,34.3-89.9,40.3-141.4,23.6
+c-82.5-26.9-116.3-91.3-125.6-169.6c-9.7-84.8,18.5-157.1,94.6-201.6C1318.2,861.2,1382.1,864.4,1440.1,914.9L1440.1,914.9z
+M1276,1084.1c0.9,20.4,7.4,39.9,19.5,56.1c25,33.4,72.8,40.3,106.6,15.3c5.6-4.2,10.7-9.3,15.3-15.3c26-35.2,26-93.2,0-128.4
+c-13-18.1-33.4-28.7-55.2-29.2C1311.2,979.4,1275.5,1018.8,1276,1084.1z M1761.3,1086.9c-3.7-119.1,74.6-208.1,185.9-211.4
+c118.2-3.7,204.4,75.6,208.1,191.4c3.7,117.3-68.1,200.2-178.9,211.4C1855.4,1290.4,1759.4,1202.8,1761.3,1086.9L1761.3,1086.9z
+M1877.6,1075.8c-0.9,23.2,6,45.9,19.9,64.9c25.5,33.4,73.2,39.9,106.6,13.9c5.1-3.7,9.3-8.3,13.4-13c26.9-35.2,26.9-94.6,0.5-129.8
+c-13-17.6-33.4-28.7-55.2-29.2C1912.9,979.8,1877.6,1017.8,1877.6,1075.8z M1720.5,994.7c0,71.8,0.5,143.7,0,215.5
+c0.5,32.9-25.5,60.3-58.4,61.2c-5.6,0-11.6-0.5-17.2-1.9c-23.2-6-40.8-30.6-40.8-59.8V841.2c0-21.8-0.5-43.1,0-64.9
+c0.5-35.7,23.2-58.9,57.5-58.9c35.2-0.5,58.9,22.7,58.9,59.8C1721,849.6,1720.5,922.4,1720.5,994.7z" />
+            <path class="st0" d="M1276,1084.1c-0.5-65.4,35.2-104.8,85.7-102c21.8,0.9,42.2,11.6,55.2,29.7c26,34.8,26,93.2,0,128.4
+c-25,33.4-72.8,40.3-106.6,15.3c-5.6-4.2-10.7-9.3-15.3-15.3C1283.4,1124,1276.9,1104.5,1276,1084.1L1276,1084.1z M1877.6,1075.8
+c0-57.5,35.2-95.9,85.3-93.2c21.8,0.5,42.2,11.6,55.2,29.2c26.4,35.2,26.4,95-0.5,129.8c-26,32.9-74.2,38.5-107.1,12.5
+c-5.1-3.7-9.3-8.3-13-13.4C1883.7,1121.7,1877.2,1099,1877.6,1075.8z" />
+            <path class="st3" d="M489.4,178.9h1520.8c166.4,0,301.3,134.9,301.3,301.3v1404.4c0,166.4-134.9,301.3-301.3,301.3H489.4
+c-166.4,0-301.3-134.9-301.3-301.3V480.2C188.1,313.8,323,178.9,489.4,178.9z" />
+        </svg>
+    </div>
+    <div class="chat-box-message">
+        <a href="https://zalo.me/${item.zalo}" target="_blank" title="${item.name}">
+            <p>${item.phone} - ${item.title}. ${item.name}</p>
+        </a>
+    </div>
+</li>`;
+  });
+
+  document.querySelector(".chat-box-content ul").innerHTML = renderChatBox;
+}
+
 try {
+  createLogo();
+  createChatBox();
   if (document.querySelector(".modal")) {
     clickOutsideCloseModal();
-    closeModal();
     document.addEventListener("keydown", pressKey);
   }
 
