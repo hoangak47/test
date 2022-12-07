@@ -2925,6 +2925,10 @@ ul.product-controls {
   .root-menu {
     display: none !important;
   }
+
+  .modal {
+    padding: 20px;
+  }
 }
 
 /* Small : 320px */
