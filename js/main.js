@@ -319,11 +319,51 @@ function pressKey(e) {
 }
 
 /*-------------------
+    load Data
+--------------------- */
+function loadMenuMini(number) {
+  const ul = document.querySelector(".product-filter-menu");
+  let as = "";
+
+  let array = "";
+  data[0].menu.map((item, index) => {
+    array = data[0].menu.filter((item) => item.parentId === number);
+    if (item.parentId === number) {
+      return (as += `<li data-index="${index}" data-filter=${item.parentId}>${item.title} </li>`);
+    } else {
+      return (as += `<li style="display: none" data-index="${index}" data-filter=${item.parentId}>${item.title}</li>`);
+    }
+  });
+
+  if (array.length > 1) {
+    ul.innerHTML = `<li class="active" data-filter="*" data-index="*">Tất cả</li> ${as}`;
+  } else {
+    ul.innerHTML = `<li class="active" style="visibility: hidden" data-filter="*" data-index="*">Tất cả</li>`;
+  }
+
+  document.querySelectorAll(".product-filter-menu li").forEach((items) => {
+    items.addEventListener("click", (e) => {
+      console.log(items.dataset.index);
+    });
+  });
+}
+
+/*-------------------
 		load Data Product
 	--------------------- */
 
-function loadDataProduct() {
-  data.forEach((item) => {
+function loadDataProduct(data) {
+  const listProduct = document.querySelector(".product-list");
+  const h2 = document.createElement("h2");
+  const modal = document.querySelector(".modal");
+
+  h2.classList.add("col-12");
+  h2.classList.add("text-center");
+  h2.classList.add("product-list-title");
+  h2.innerHTML = data[0].title;
+  listProduct.appendChild(h2);
+
+  data[0].data.forEach((item) => {
     const div = document.createElement("div");
     div.classList.add("col-6");
     div.classList.add("col-lg-3");
@@ -459,7 +499,7 @@ function loadDataProduct() {
           ".details-product .row"
         );
 
-        data.forEach((items, index) => {
+        data[0].data.forEach((items, index) => {
           if (items.type === 1) {
             if (index + 1 === item.id) {
               divDetailProduct.innerHTML += `<div class="col-12 details-product-suggest active">
@@ -493,7 +533,7 @@ function loadDataProduct() {
             items.classList.add("active");
             const img = document.querySelector(".product-image");
 
-            img.src = data[index].img;
+            img.src = data[0].data[index].img;
           });
         });
       });
@@ -607,9 +647,14 @@ c-166.4,0-301.3-134.9-301.3-301.3V480.2C188.1,313.8,323,178.9,489.4,178.9z" />
   document.querySelector(".chat-box-content ul").innerHTML = renderChatBox;
 }
 
+/*--------------------
+click Menu Mini
+--------------------*/
+
 try {
   createLogo();
   createChatBox();
+
   if (document.querySelector(".modal")) {
     clickOutsideCloseModal();
     document.addEventListener("keydown", pressKey);

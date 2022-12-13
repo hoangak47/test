@@ -114,6 +114,370 @@ const dataTab = [
   },
 ];
 
+const data = [
+  {
+    title: "Sản phẩm PVC",
+    type: 2,
+    menu: [
+      {
+        parentId: 0,
+        id: 1,
+        title: "Thông dụng",
+      },
+      {
+        parentId: 0,
+        id: 2,
+        title: "Có gai",
+      },
+      {
+        parentId: 0,
+        id: 3,
+        title: "Chịu dầu",
+      },
+      {
+        parentId: 0,
+        id: 4,
+        title: "Đặc biệt",
+      },
+      {
+        parentId: 1,
+        id: 5,
+        title: "Thông dụng",
+      },
+      {
+        parentId: 1,
+        id: 6,
+        title: "Kháng tĩnh điện",
+      },
+      {
+        parentId: 2,
+        id: 7,
+        title: "TPU",
+      },
+    ],
+    data: [
+      {
+        id: 1,
+        name: "SB-0704",
+        img: "./img/products/PVC/0704.JPG",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 2,
+        name: "SU-10CF",
+        img: "./img/products/PVC/SU-10CF.JPG",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 3,
+        name: "SU-1401",
+        img: "./img/products/PVC/SU-1401.JPG",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 4,
+        name: "SC-23CF",
+        img: "./img/products/PVC/23 CF.JPG",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 5,
+        name: "SU-2102",
+        img: "./img/products/PVC/2102.JPG",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 6,
+        name: "P42-14",
+        img: "./img/products/PVC/42-14.JPG",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 7,
+        name: "SC-09DF",
+        img: "./img/products/PVC/09DF.jpg",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 8,
+        name: "SU-14DF",
+        img: "./img/products/PVC/14 DF.jpg",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 9,
+        name: "SU-14CK",
+        img: "./img/products/PVC/SU-14CK.jpg",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 10,
+        name: "P31 - 11",
+        img: "./img/products/PVC/P31-11.jpg",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 11,
+        name: "P41 - 11",
+        img: "./img/products/PVC/P41 - 11.JPG",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 12,
+        name: "LB-21",
+        img: "./img/products/PVC/LB 21.jpg",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 13,
+        name: "LB-31",
+        img: "./img/products/PVC/LB 31.jpg",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 14,
+        name: "SC-09CF",
+        img: "./img/products/PVC/09CF.JPG",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 15,
+        name: "SU-11CF",
+        img: "./img/products/PVC/11CF.jpg",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 16,
+        name: "SC-20CF",
+        img: "./img/products/PVC/20 CF.jpg",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 17,
+        name: "SU-2102",
+        img: "./img/products/PVC/2102 (2).JPG",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 18,
+        name: "SC-08DF",
+        img: "./img/products/PVC/08-DF.JPG",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 19,
+        name: "SU-13CK",
+        img: "./img/products/PVC/13CK.jpg",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 20,
+        name: "P31 - 21",
+        img: "./img/products/PVC/P31 - 21.jpg",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 21,
+        name: "30CC",
+        img: "./img/products/PVC/30CC.jpg",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 22,
+        name: "SC-1315",
+        img: "./img/products/PVC/1315.jpg",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 23,
+        name: "SC-1327",
+        img: "./img/products/PVC/1327.jpg",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 24,
+        name: "SF-10NF",
+        img: "./img/products/PVC/10 NF.jpg",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 25,
+        name: "P25-35/O",
+        img: "./img/products/PVC/25-25.jpg",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 26,
+        name: "S15",
+        img: "./img/products/PVC/S15.jpg",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 27,
+        name: "S18",
+        img: "./img/products/PVC/S18.jpg",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 28,
+        name: "S25",
+        img: "./img/products/PVC/S25.jpg",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 29,
+        name: "XD-10CF",
+        img: "./img/products/PVC/XD-10 CF.jpg",
+
+        type: 1,
+        parentId: 0,
+      },
+      {
+        id: 30,
+        name: "SA-12CG",
+        img: "./img/products/PVC/12CG.jpg",
+
+        type: 1,
+        parentId: 1,
+      },
+      {
+        id: 31,
+        name: "SA-12CG-INO",
+        img: "./img/products/PVC/12CG- INO.JPG",
+
+        type: 1,
+        parentId: 1,
+      },
+      {
+        id: 32,
+        name: "SA-13CG",
+        img: "./img/products/PVC/13CG.JPG",
+
+        type: 1,
+        parentId: 1,
+      },
+      {
+        id: 33,
+        name: "P22-16CA",
+        img: "./img/products/PVC/16 CA.jpg",
+
+        type: 1,
+        parentId: 1,
+      },
+      {
+        id: 34,
+        name: "SA-13QF",
+        img: "./img/products/PVC/13 QF.JPG",
+
+        type: 1,
+        parentId: 1,
+      },
+      {
+        id: 34,
+        name: "RT-300",
+        img: "./img/products/PVC/RT300.jpg",
+
+        type: 1,
+        parentId: 1,
+      },
+      {
+        id: 35,
+        name: "RT-500",
+        img: "./img/products/PVC/RT 500.JPG",
+
+        type: 1,
+        parentId: 1,
+      },
+      {
+        id: 36,
+        name: "MP4",
+        img: "./img/products/PVC/MP4.jpg",
+
+        type: 1,
+        parentId: 1,
+      },
+      {
+        id: 37,
+        name: "MP6",
+        img: "./img/products/PVC/MP6.JPG",
+
+        type: 1,
+        parentId: 1,
+      },
+      {
+        id: 38,
+        name: "MP7",
+        img: "./img/products/PVC/MP7.JPG",
+
+        type: 1,
+        parentId: 1,
+      },
+    ],
+  },
+];
+const listProduct = document.querySelector(".product-list");
+
+const ul = document.createElement("ul");
+ul.classList.add("product-filter-menu");
+ul.classList.add("text-center");
+listProduct.appendChild(ul);
+
 $(".product-filter .product-controls li.product--controls-tab").each(function (
   index,
   item
@@ -126,6 +490,8 @@ $(".product-filter .product-controls li.product--controls-tab").each(function (
     );
     $(this).addClass("active");
 
+    loadMenuMini(index);
+
     document.querySelector(".section-detail").classList.remove("show");
     $(".product-filter .product-controls li.product--controls-tab").each(
       function (index, item) {
@@ -137,6 +503,7 @@ $(".product-filter .product-controls li.product--controls-tab").each(function (
     const detail = document.querySelector(".section-detail");
     const title = document.querySelector(".section-title h3");
     const titleProductList = document.querySelector(".product-list-title");
+    const ul = document.querySelector(".product-filter-menu");
 
     if (title.innerText === dataTab[index].title) {
       return;
@@ -145,6 +512,7 @@ $(".product-filter .product-controls li.product--controls-tab").each(function (
     detail.style.opacity = 0;
     title.style.opacity = 0;
     titleProductList.style.opacity = 0;
+    ul.style.opacity = 0;
 
     setTimeout(() => {
       detail.innerHTML = dataTab[index].content;
@@ -153,9 +521,17 @@ $(".product-filter .product-controls li.product--controls-tab").each(function (
       title.innerHTML = dataTab[index].title;
       title.style.opacity = 1;
 
-      document.querySelector(".product-list-title span").innerHTML =
-        dataTab[index].title;
+      document.querySelector(
+        ".product-list-title"
+      ).innerHTML = `Sản phẩm ${dataTab[index].title}`;
       titleProductList.style.opacity = 1;
+
+      titleProductList.style.opacity = 1;
+      ul.style.opacity = 1;
     }, 300);
   });
 });
+
+loadDataProduct(data);
+
+loadMenuMini(0);
