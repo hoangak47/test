@@ -468,6 +468,150 @@ const data = [
         type: 1,
         parentId: 1,
       },
+      {
+        id: 39,
+        name: "P25-24NFDA",
+        img: "./img/products/PVC/24UNFDA.JPG",
+
+        type: 1,
+        parentId: 2,
+      },
+      {
+        id: 40,
+        name: "P25-25NFDA",
+        img: "./img/products/PVC/24UNFDA.JPG",
+
+        type: 1,
+        parentId: 2,
+      },
+      {
+        id: 41,
+        name: "SU-1402NFDA",
+        img: "./img/products/PVC/1402.JPG",
+
+        type: 1,
+        parentId: 2,
+      },
+      {
+        id: 42,
+        name: "M25",
+        img: "./img/products/PVC/M25.jpg",
+
+        type: 1,
+        parentId: 3,
+      },
+      {
+        id: 43,
+        name: "KTĐ-10CF",
+        img: "./img/products/PVC/SU-10CF.jpg",
+
+        type: 1,
+        parentId: 3,
+      },
+      {
+        id: 44,
+        name: "TC-168",
+        img: "./img/products/PVC/168.jpg",
+
+        type: 1,
+        parentId: 4,
+      },
+      {
+        id: 45,
+        name: "SB-12UF",
+        img: "./img/products/PVC/12 UF.JPG",
+
+        type: 1,
+        parentId: 4,
+      },
+      {
+        id: 46,
+        name: "SC-07UF",
+        img: "./img/products/PVC/07UF.JPG",
+
+        type: 1,
+        parentId: 4,
+      },
+      {
+        id: 47,
+        name: "SC-10UF",
+        img: "./img/products/PVC/10 UF.jpg",
+
+        type: 1,
+        parentId: 4,
+      },
+      {
+        id: 48,
+        name: "UPPRO1/11TF",
+        img: "./img/products/PVC/URO 1-11 TF.jpg",
+
+        type: 1,
+        parentId: 4,
+      },
+      {
+        id: 49,
+        name: "SC-08UF",
+        img: "./img/products/PVC/08UF.jpg",
+
+        type: 1,
+        parentId: 4,
+      },
+      {
+        id: 50,
+        name: "SC-15UF",
+        img: "./img/products/PVC/15 UF.jpg",
+
+        type: 1,
+        parentId: 4,
+      },
+      {
+        id: 51,
+        name: " U22-84",
+        img: "./img/products/PVC/U22- 84.jpg",
+
+        type: 1,
+        parentId: 4,
+      },
+      {
+        id: 52,
+        name: "1315-XD",
+        img: "./img/products/PVC/XD 1315.jpg",
+
+        type: 1,
+        parentId: 4,
+      },
+      {
+        id: 53,
+        name: "TC-KTD168",
+        img: "./img/products/PVC/168.jpg",
+
+        type: 1,
+        parentId: 5,
+      },
+      {
+        id: 54,
+        name: "SB-KTĐ12UF",
+        img: "./img/products/PVC/12 UF.JPG",
+
+        type: 1,
+        parentId: 5,
+      },
+      {
+        id: 55,
+        name: "TPU F30",
+        img: "./img/products/PVC/F300.jpg",
+
+        type: 1,
+        parentId: 6,
+      },
+      {
+        id: 56,
+        name: "PU T50",
+        img: "./img/products/PVC/T500.jpg",
+
+        type: 1,
+        parentId: 6,
+      },
     ],
   },
 ];
