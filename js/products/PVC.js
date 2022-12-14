@@ -167,7 +167,7 @@ const data = [
       {
         id: 2,
         name: "SU-10CF",
-        img: "./img/products/PVC/SU-10CF.JPG",
+        img: "./img/products/PVC/SU-10CF.jpg",
 
         type: 1,
         parentId: 0,
@@ -175,7 +175,7 @@ const data = [
       {
         id: 3,
         name: "SU-1401",
-        img: "./img/products/PVC/SU-1401.JPG",
+        img: "./img/products/PVC/SU-1401.jpg",
 
         type: 1,
         parentId: 0,
