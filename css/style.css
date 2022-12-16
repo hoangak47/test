@@ -2420,6 +2420,7 @@ ul.product-controls {
 
 .modal.show {
   top: 0%;
+  max-height: unset;
 }
 
 .modal-content {
@@ -2456,7 +2457,7 @@ ul.product-controls {
 .details-product {
   line-height: 2;
   overflow-y: auto;
-  height: 65%;
+  height: 100%;
 }
 
 .details-product ul {
@@ -2680,7 +2681,7 @@ ul.product-controls {
   }
 
   .modal .product-image {
-    height: 25vh;
+    height: 30vh;
   }
 
   .col-product-image {
@@ -2696,6 +2697,10 @@ ul.product-controls {
   }
   .modal {
     padding: 20px;
+  }
+
+  .details-product {
+    height: 65%;
   }
 }
 
@@ -2863,7 +2868,7 @@ ul.product-controls {
   }
 
   .chat-box-content.show {
-    height: 45vh;
+    height: 60vh;
   }
 
   .chat-box .chat-box-title,
@@ -2900,6 +2905,9 @@ ul.product-controls {
 
   .modal {
     padding: 20px;
+  }
+  .details-product {
+    height: 65%;
   }
 }
 

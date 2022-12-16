@@ -290,6 +290,8 @@ function openChatbox() {
     chatBoxTitle.classList.add("full-width");
     chatBoxContent.classList.add("show");
     chatBox.classList.add("show");
+    document.querySelector(".chat-box .chat-box-title h5").innerText =
+      "Chăm Sóc Khách Hàng";
   });
 }
 
@@ -303,6 +305,8 @@ function closeChatbox() {
       chatBoxTitle.classList.remove("full-width");
       chatBoxContent.classList.remove("show");
       chatBox.classList.remove("show");
+      console.log(document.querySelector(".chat-box .chat-box-title h5"));
+      document.querySelector(".chat-box .chat-box-title h5").innerText = "CSKH";
     });
 }
 
@@ -632,13 +636,13 @@ function loadDataProduct(data) {
         );
 
         if (data[0].type === 2) {
-          const indexDataset = document.querySelectorAll(
+          const indexDataset = document.querySelector(
             ".product-filter-menu li.active"
-          )[0].dataset.index;
+          ).dataset.index;
 
-          const indexControlTab = document.querySelectorAll(
+          const indexControlTab = document.querySelector(
             ".product-filter .product-controls li.product--controls-tab.active"
-          )[0].dataset.index;
+          ).dataset.index;
 
           data[0].data.forEach((items, index) => {
             if (indexDataset === "*") {
@@ -704,6 +708,7 @@ function closeOutsideChatBox(e) {
       chatBoxTitle.classList.remove("full-width");
       chatBoxContent.classList.remove("show");
       chatBox.classList.remove("show");
+      document.querySelector(".chat-box .chat-box-title h5").innerText = "CSKH";
     }
   });
 }
@@ -802,6 +807,7 @@ try {
   if (document.querySelector(".chat-box")) {
     closeOutsideChatBox();
     openChatbox();
+
     closeChatbox();
   }
 } catch (error) {}
