@@ -160,7 +160,7 @@ const data = [
         id: 1,
         name: "SB-0704",
         img: "./img/products/PVC/0704.JPG",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -168,7 +168,7 @@ const data = [
         id: 2,
         name: "SU-10CF",
         img: "./img/products/PVC/SU-10CF.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -176,7 +176,7 @@ const data = [
         id: 3,
         name: "SU-1401",
         img: "./img/products/PVC/SU-1401.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -184,7 +184,7 @@ const data = [
         id: 4,
         name: "SC-23CF",
         img: "./img/products/PVC/23 CF.JPG",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -192,7 +192,7 @@ const data = [
         id: 5,
         name: "SU-2102",
         img: "./img/products/PVC/2102.JPG",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -200,7 +200,7 @@ const data = [
         id: 6,
         name: "P42-14",
         img: "./img/products/PVC/42-14.JPG",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -208,7 +208,7 @@ const data = [
         id: 7,
         name: "SC-09DF",
         img: "./img/products/PVC/09DF.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -216,7 +216,7 @@ const data = [
         id: 8,
         name: "SU-14DF",
         img: "./img/products/PVC/14 DF.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -224,7 +224,7 @@ const data = [
         id: 9,
         name: "SU-14CK",
         img: "./img/products/PVC/SU-14CK.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -232,7 +232,7 @@ const data = [
         id: 10,
         name: "P31 - 11",
         img: "./img/products/PVC/P31-11.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -240,7 +240,7 @@ const data = [
         id: 11,
         name: "P41 - 11",
         img: "./img/products/PVC/P41 - 11.JPG",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -248,7 +248,7 @@ const data = [
         id: 12,
         name: "LB-21",
         img: "./img/products/PVC/LB 21.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -256,7 +256,7 @@ const data = [
         id: 13,
         name: "LB-31",
         img: "./img/products/PVC/LB 31.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -264,7 +264,7 @@ const data = [
         id: 14,
         name: "SC-09CF",
         img: "./img/products/PVC/09CF.JPG",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -272,7 +272,7 @@ const data = [
         id: 15,
         name: "SU-11CF",
         img: "./img/products/PVC/11CF.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -280,7 +280,7 @@ const data = [
         id: 16,
         name: "SC-20CF",
         img: "./img/products/PVC/20 CF.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -288,7 +288,7 @@ const data = [
         id: 17,
         name: "SU-2102",
         img: "./img/products/PVC/2102 (2).JPG",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -296,7 +296,7 @@ const data = [
         id: 18,
         name: "SC-08DF",
         img: "./img/products/PVC/08-DF.JPG",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -304,7 +304,7 @@ const data = [
         id: 19,
         name: "SU-13CK",
         img: "./img/products/PVC/13CK.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -312,7 +312,7 @@ const data = [
         id: 20,
         name: "P31 - 21",
         img: "./img/products/PVC/P31 - 21.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -320,7 +320,7 @@ const data = [
         id: 21,
         name: "30CC",
         img: "./img/products/PVC/30CC.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -328,7 +328,7 @@ const data = [
         id: 22,
         name: "SC-1315",
         img: "./img/products/PVC/1315.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -336,7 +336,7 @@ const data = [
         id: 23,
         name: "SC-1327",
         img: "./img/products/PVC/1327.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -344,7 +344,7 @@ const data = [
         id: 24,
         name: "SF-10NF",
         img: "./img/products/PVC/10 NF.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -352,7 +352,7 @@ const data = [
         id: 25,
         name: "P25-35/O",
         img: "./img/products/PVC/25-25.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -360,7 +360,7 @@ const data = [
         id: 26,
         name: "S15",
         img: "./img/products/PVC/S15.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -368,7 +368,7 @@ const data = [
         id: 27,
         name: "S18",
         img: "./img/products/PVC/S18.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -376,7 +376,7 @@ const data = [
         id: 28,
         name: "S25",
         img: "./img/products/PVC/S25.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -384,7 +384,7 @@ const data = [
         id: 29,
         name: "XD-10CF",
         img: "./img/products/PVC/XD-10 CF.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 0,
       },
@@ -392,7 +392,7 @@ const data = [
         id: 30,
         name: "SA-12CG",
         img: "./img/products/PVC/12CG.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 1,
       },
@@ -400,7 +400,7 @@ const data = [
         id: 31,
         name: "SA-12CG-INO",
         img: "./img/products/PVC/12CG- INO.JPG",
-
+        productTypeID: 0,
         type: 1,
         parentId: 1,
       },
@@ -408,7 +408,7 @@ const data = [
         id: 32,
         name: "SA-13CG",
         img: "./img/products/PVC/13CG.JPG",
-
+        productTypeID: 0,
         type: 1,
         parentId: 1,
       },
@@ -416,7 +416,7 @@ const data = [
         id: 33,
         name: "P22-16CA",
         img: "./img/products/PVC/16 CA.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 1,
       },
@@ -424,191 +424,191 @@ const data = [
         id: 34,
         name: "SA-13QF",
         img: "./img/products/PVC/13 QF.JPG",
-
-        type: 1,
-        parentId: 1,
-      },
-      {
-        id: 34,
-        name: "RT-300",
-        img: "./img/products/PVC/RT300.jpg",
-
+        productTypeID: 0,
         type: 1,
         parentId: 1,
       },
       {
         id: 35,
-        name: "RT-500",
-        img: "./img/products/PVC/RT 500.JPG",
-
+        name: "RT-300",
+        img: "./img/products/PVC/RT300.jpg",
+        productTypeID: 0,
         type: 1,
         parentId: 1,
       },
       {
         id: 36,
-        name: "MP4",
-        img: "./img/products/PVC/MP4.jpg",
-
+        name: "RT-500",
+        img: "./img/products/PVC/RT 500.JPG",
+        productTypeID: 0,
         type: 1,
         parentId: 1,
       },
       {
         id: 37,
-        name: "MP6",
-        img: "./img/products/PVC/MP6.JPG",
-
+        name: "MP4",
+        img: "./img/products/PVC/MP4.jpg",
+        productTypeID: 0,
         type: 1,
         parentId: 1,
       },
       {
         id: 38,
-        name: "MP7",
-        img: "./img/products/PVC/MP7.JPG",
-
+        name: "MP6",
+        img: "./img/products/PVC/MP6.JPG",
+        productTypeID: 0,
         type: 1,
         parentId: 1,
       },
       {
         id: 39,
-        name: "P25-24NFDA",
-        img: "./img/products/PVC/24UNFDA.JPG",
-
+        name: "MP7",
+        img: "./img/products/PVC/MP7.JPG",
+        productTypeID: 0,
         type: 1,
-        parentId: 2,
+        parentId: 1,
       },
       {
         id: 40,
-        name: "P25-25NFDA",
+        name: "P25-24NFDA",
         img: "./img/products/PVC/24UNFDA.JPG",
-
+        productTypeID: 0,
         type: 1,
         parentId: 2,
       },
       {
         id: 41,
-        name: "SU-1402NFDA",
-        img: "./img/products/PVC/1402.JPG",
-
+        name: "P25-25NFDA",
+        img: "./img/products/PVC/24UNFDA.JPG",
+        productTypeID: 0,
         type: 1,
         parentId: 2,
       },
       {
         id: 42,
-        name: "M25",
-        img: "./img/products/PVC/M25.jpg",
-
+        name: "SU-1402NFDA",
+        img: "./img/products/PVC/1402.JPG",
+        productTypeID: 0,
         type: 1,
-        parentId: 3,
+        parentId: 2,
       },
       {
         id: 43,
-        name: "KTĐ-10CF",
-        img: "./img/products/PVC/SU-10CF.jpg",
-
+        name: "M25",
+        img: "./img/products/PVC/M25.jpg",
+        productTypeID: 0,
         type: 1,
         parentId: 3,
       },
       {
         id: 44,
-        name: "TC-168",
-        img: "./img/products/PVC/168.jpg",
-
+        name: "KTĐ-10CF",
+        img: "./img/products/PVC/SU-10CF.jpg",
+        productTypeID: 0,
         type: 1,
-        parentId: 4,
+        parentId: 3,
       },
       {
         id: 45,
-        name: "SB-12UF",
-        img: "./img/products/PVC/12 UF.JPG",
-
+        name: "TC-168",
+        img: "./img/products/PVC/168.jpg",
+        productTypeID: 1,
         type: 1,
         parentId: 4,
       },
       {
         id: 46,
-        name: "SC-07UF",
-        img: "./img/products/PVC/07UF.JPG",
-
+        name: "SB-12UF",
+        img: "./img/products/PVC/12 UF.JPG",
+        productTypeID: 1,
         type: 1,
         parentId: 4,
       },
       {
         id: 47,
-        name: "SC-10UF",
-        img: "./img/products/PVC/10 UF.jpg",
-
+        name: "SC-07UF",
+        img: "./img/products/PVC/07UF.JPG",
+        productTypeID: 1,
         type: 1,
         parentId: 4,
       },
       {
         id: 48,
-        name: "UPPRO1/11TF",
-        img: "./img/products/PVC/URO 1-11 TF.jpg",
-
+        name: "SC-10UF",
+        img: "./img/products/PVC/10 UF.jpg",
+        productTypeID: 1,
         type: 1,
         parentId: 4,
       },
       {
         id: 49,
-        name: "SC-08UF",
-        img: "./img/products/PVC/08UF.jpg",
-
+        name: "UPPRO1/11TF",
+        img: "./img/products/PVC/URO 1-11 TF.jpg",
+        productTypeID: 1,
         type: 1,
         parentId: 4,
       },
       {
         id: 50,
-        name: "SC-15UF",
-        img: "./img/products/PVC/15 UF.jpg",
-
+        name: "SC-08UF",
+        img: "./img/products/PVC/08UF.jpg",
+        productTypeID: 1,
         type: 1,
         parentId: 4,
       },
       {
         id: 51,
-        name: " U22-84",
-        img: "./img/products/PVC/U22- 84.jpg",
-
+        name: "SC-15UF",
+        img: "./img/products/PVC/15 UF.jpg",
+        productTypeID: 1,
         type: 1,
         parentId: 4,
       },
       {
         id: 52,
-        name: "1315-XD",
-        img: "./img/products/PVC/XD 1315.jpg",
-
+        name: " U22-84",
+        img: "./img/products/PVC/U22- 84.jpg",
+        productTypeID: 1,
         type: 1,
         parentId: 4,
       },
       {
         id: 53,
-        name: "TC-KTD168",
-        img: "./img/products/PVC/168.jpg",
-
+        name: "1315-XD",
+        img: "./img/products/PVC/XD 1315.jpg",
+        productTypeID: 1,
         type: 1,
-        parentId: 5,
+        parentId: 4,
       },
       {
         id: 54,
-        name: "SB-KTĐ12UF",
-        img: "./img/products/PVC/12 UF.JPG",
-
+        name: "TC-KTD168",
+        img: "./img/products/PVC/168.jpg",
+        productTypeID: 1,
         type: 1,
         parentId: 5,
       },
       {
         id: 55,
+        name: "SB-KTĐ12UF",
+        img: "./img/products/PVC/12 UF.JPG",
+        productTypeID: 1,
+        type: 1,
+        parentId: 5,
+      },
+      {
+        id: 56,
         name: "TPU F30",
         img: "./img/products/PVC/F300.jpg",
-
+        productTypeID: 2,
         type: 1,
         parentId: 6,
       },
       {
-        id: 56,
-        name: "PU T50",
+        id: 57,
+        name: "TPU T50",
         img: "./img/products/PVC/T500.jpg",
-
+        productTypeID: 2,
         type: 1,
         parentId: 6,
       },
@@ -635,6 +635,30 @@ $(".product-filter .product-controls li.product--controls-tab").each(function (
     $(this).addClass("active");
 
     loadMenuMini(index);
+    document.querySelectorAll(".product-list .all").forEach((item) => {
+      item.style.display = "none";
+      item.style.opacity = 0;
+    });
+
+    switch (index) {
+      case 0:
+        document.querySelectorAll(".product-list .all.PVC").forEach((item) => {
+          item.style.display = "block";
+        });
+        break;
+      case 1:
+        document.querySelectorAll(".product-list .all.PU").forEach((item) => {
+          item.style.display = "block";
+        });
+        break;
+      case 2:
+        document.querySelectorAll(".product-list .all.TPU").forEach((item) => {
+          item.style.display = "block";
+        });
+        break;
+      default:
+        break;
+    }
 
     document.querySelector(".section-detail").classList.remove("show");
     $(".product-filter .product-controls li.product--controls-tab").each(
@@ -650,6 +674,9 @@ $(".product-filter .product-controls li.product--controls-tab").each(function (
     const ul = document.querySelector(".product-filter-menu");
 
     if (title.innerText === dataTab[index].title) {
+      document.querySelectorAll(".product-list .all").forEach((item) => {
+        item.style.opacity = 1;
+      });
       return;
     }
 
@@ -672,6 +699,10 @@ $(".product-filter .product-controls li.product--controls-tab").each(function (
 
       titleProductList.style.opacity = 1;
       ul.style.opacity = 1;
+
+      document.querySelectorAll(".product-list .all").forEach((item) => {
+        item.style.opacity = 1;
+      });
     }, 300);
   });
 });

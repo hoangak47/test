@@ -181,8 +181,14 @@ ol {
   margin-top: 40px;
 }
 
+.product-list .all {
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+
 .product-list-title {
   margin-bottom: 50px;
+  transition: all 0.5s ease-in-out;
 }
 
 .set-bg {
@@ -2853,7 +2859,7 @@ ul.product-controls {
 
   .chat-box .chat-box-title.full-width,
   .chat-box-content.show {
-    width: 53vw;
+    width: 95vw;
   }
 
   .chat-box-content.show {

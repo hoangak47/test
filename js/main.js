@@ -343,9 +343,111 @@ function loadMenuMini(number) {
 
   document.querySelectorAll(".product-filter-menu li").forEach((items) => {
     items.addEventListener("click", (e) => {
-      console.log(items.dataset.index);
+      document.querySelectorAll(".product-filter-menu li").forEach((item) => {
+        item.classList.remove("active");
+      });
+      items.classList.add("active");
+
+      document.querySelectorAll(".product-list .all").forEach((item) => {
+        item.style.display = "none";
+      });
+
+      switch (items.dataset.index) {
+        case "0":
+          document
+            .querySelectorAll(".product-list .all.TD-PVC")
+            .forEach((item) => {
+              item.style.display = "block";
+            });
+          break;
+        case "1":
+          document
+            .querySelectorAll(".product-list .all.CG-PVC")
+            .forEach((item) => {
+              item.style.display = "block";
+            });
+          break;
+        case "2":
+          document
+            .querySelectorAll(".product-list .all.CD-PVC")
+            .forEach((item) => {
+              item.style.display = "block";
+            });
+          break;
+        case "3":
+          document
+            .querySelectorAll(".product-list .all.DB-PVC")
+            .forEach((item) => {
+              item.style.display = "block";
+            });
+          break;
+        case "4":
+          document
+            .querySelectorAll(".product-list .all.TD-PU")
+            .forEach((item) => {
+              item.style.display = "block";
+            });
+          break;
+        case "5":
+          document
+            .querySelectorAll(".product-list .all.KTD-PU")
+            .forEach((item) => {
+              item.style.display = "block";
+            });
+          break;
+        case "*":
+          if (number === 0) {
+            document
+              .querySelectorAll(".product-list .all.PVC")
+              .forEach((item) => {
+                item.style.display = "block";
+              });
+          } else if (number === 1) {
+            document
+              .querySelectorAll(".product-list .all.PU")
+              .forEach((item) => {
+                item.style.display = "block";
+              });
+          } else {
+            document
+              .querySelectorAll(".product-list .all.TPU")
+              .forEach((item) => {
+                item.style.display = "block";
+              });
+          }
+          break;
+        default:
+          document.querySelectorAll(".product-list .all").forEach((item) => {
+            item.style.display = "block";
+          });
+          break;
+      }
     });
   });
+}
+
+/*-------------------
+    Load Detail Product
+--------------------- */
+function loadDetailProduct(index, item, items, divDetailProduct) {
+  if (index + 1 === item.id) {
+    divDetailProduct.innerHTML += `<div data-index="${index}" class="col-12 details-product-suggest active  ">
+  <h4 class="">${items.name}</h4>
+  <ul class="">
+      <li>Màu sắc:</li>
+      <li>Thông số:</li>
+  </ul>
+</div>`;
+  } else {
+    divDetailProduct.innerHTML += `<div data-index="${index}" class="col-12 details-product-suggest  ">
+    <h4 class="">${items.name}</h4>
+    <ul class="">
+        <li>Màu sắc:</li>
+        <li>Thông số:</li>
+    </ul>
+</div>
+`;
+  }
 }
 
 /*-------------------
@@ -367,7 +469,37 @@ function loadDataProduct(data) {
     const div = document.createElement("div");
     div.classList.add("col-6");
     div.classList.add("col-lg-3");
-    div.innerHTML = `<div class="single-product-item">
+    if (item.productTypeID || item.productTypeID === 0) {
+      div.classList.add("all");
+      div.classList.add(
+        item.productTypeID !== undefined || item.productTypeID !== null
+          ? item.productTypeID === 0
+            ? "PVC"
+            : item.productTypeID === 1
+            ? "PU"
+            : "TPU"
+          : ""
+      );
+      div.classList.add(
+        item.productTypeID !== undefined || item.productTypeID !== null
+          ? item.productTypeID === 0
+            ? item.parentId === 0
+              ? "TD-PVC"
+              : item.parentId === 1
+              ? "CG-PVC"
+              : item.parentId === 2
+              ? "CD-PVC"
+              : "DB-PVC"
+            : item.productTypeID === 1
+            ? item.parentId === 4
+              ? "TD-PU"
+              : "KTD-PU"
+            : "TPU"
+          : ""
+      );
+    }
+
+    div.innerHTML = `<div class="single-product-item"   >
       <figure>
           <img src="${item.img}" alt="">
       </figure>
@@ -499,28 +631,32 @@ function loadDataProduct(data) {
           ".details-product .row"
         );
 
-        data[0].data.forEach((items, index) => {
-          if (items.type === 1) {
-            if (index + 1 === item.id) {
-              divDetailProduct.innerHTML += `<div class="col-12 details-product-suggest active">
-            <h4 class="">${items.name}</h4>
-            <ul class="">
-                <li>Màu sắc:</li>
-                <li>Thông số:</li>
-            </ul>
-        </div>`;
-            } else {
-              divDetailProduct.innerHTML += `<div class="col-12 details-product-suggest">
-              <h4 class="">${items.name}</h4>
-              <ul class="">
-                  <li>Màu sắc:</li>
-                  <li>Thông số:</li>
-              </ul>
-          </div>
-          `;
+        if (data[0].type === 2) {
+          const indexDataset = document.querySelectorAll(
+            ".product-filter-menu li.active"
+          )[0].dataset.index;
+
+          const indexControlTab = document.querySelectorAll(
+            ".product-filter .product-controls li.product--controls-tab.active"
+          )[0].dataset.index;
+
+          data[0].data.forEach((items, index) => {
+            if (indexDataset === "*") {
+              if (items.productTypeID === parseInt(indexControlTab)) {
+                loadDetailProduct(index, item, items, divDetailProduct);
+              }
             }
-          }
-        });
+            if (items.parentId === parseInt(indexDataset)) {
+              loadDetailProduct(index, item, items, divDetailProduct);
+            }
+          });
+        } else {
+          data[0].data.forEach((items, index) => {
+            if (items.type === 1) {
+              loadDetailProduct(index, item, items, divDetailProduct);
+            }
+          });
+        }
 
         const allProduct = document.querySelectorAll(
           ".details-product-suggest"
@@ -532,12 +668,15 @@ function loadDataProduct(data) {
             });
             items.classList.add("active");
             const img = document.querySelector(".product-image");
-
-            img.src = data[0].data[index].img;
+            img.src = data[0].data[items.dataset.index].img;
           });
         });
       });
     }
+  });
+
+  document.querySelectorAll(".product-list .all.PVC").forEach((item) => {
+    item.style.display = "block";
   });
 }
 
