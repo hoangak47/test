@@ -14,12 +14,8 @@ const data = [
             img: "./img/products/DayTruyenDong/GF-10.jpg",
             img2: "./img/products/DayTruyenDong/GF-10_.jpg",
             key: "GF-10",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Máy đóng đinh thường",
-              },
-            ],
+            thickness: "1.0 mm",
+            width: "200 mm",
           },
         ],
         type: 2,
@@ -35,33 +31,25 @@ const data = [
             img2: "./img/products/DayTruyenDong/HS-5.jpg",
             img: "./img/products/DayTruyenDong/HS-5(1).jpg",
             key: "HS-5",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Máy đóng đinh thường",
-              },
-            ],
+            thickness: "0.7 mm",
+            width: "120 mm",
           },
         ],
         type: 2,
       },
       {
         id: 3,
-        name: "8-M",
-        img: "./img/products/DayTruyenDong/8-M.jpg",
+        name: "W-8",
+        img: "./img/products/DayTruyenDong/W-8.jpg",
         children: [
           {
             idProduct: 3,
-            name: "8-M",
-            img2: "./img/products/DayTruyenDong/8-M.jpg",
-            img: "./img/products/DayTruyenDong/8M(2).jpg",
-            key: "8-M",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Máy đóng đinh thường",
-              },
-            ],
+            name: "W-8",
+            img2: "./img/products/DayTruyenDong/W-8.jpg",
+            img: "./img/products/DayTruyenDong/W-8(2).jpg",
+            key: "W-8",
+            thickness: "0.7 mm",
+            width: "320 mm",
           },
         ],
         type: 2,
@@ -77,12 +65,8 @@ const data = [
             img2: "./img/products/DayTruyenDong/TC-20EF_.jpg",
             img: "./img/products/DayTruyenDong/TC-20EF.jpg",
             key: "TC-20EF",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Máy đóng đinh thường",
-              },
-            ],
+            thickness: "2.0 mm",
+            width: "500 mm",
           },
         ],
         type: 2,
@@ -98,12 +82,8 @@ const data = [
             img2: "./img/products/DayTruyenDong/S-2_S-3.jpg",
             img: "./img/products/DayTruyenDong/S-2_S-3(1).jpg",
             key: "S-1",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Máy đóng đinh thường",
-              },
-            ],
+            thickness: "1.5 mm",
+            width: "250 mm",
           },
           {
             idProduct: 5,
@@ -111,12 +91,8 @@ const data = [
             img2: "./img/products/DayTruyenDong/S-2_S-3.jpg",
             img: "./img/products/DayTruyenDong/S-2_S-3(1).jpg",
             key: "S-2",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Máy đóng đinh thường",
-              },
-            ],
+            thickness: "2.0 mm",
+            width: "250 mm",
           },
           {
             idProduct: 5,
@@ -124,12 +100,8 @@ const data = [
             img2: "./img/products/DayTruyenDong/S-2_S-3.jpg",
             img: "./img/products/DayTruyenDong/S-2_S-3(1).jpg",
             key: "S-3",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Máy đóng đinh thường",
-              },
-            ],
+            thickness: "3.0 mm",
+            width: "200 mm",
           },
         ],
         type: 2,
@@ -145,12 +117,8 @@ const data = [
             img2: "./img/products/DayTruyenDong/TC-3_.jpg",
             img: "./img/products/DayTruyenDong/TC-3.jpg",
             key: "TC-2",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Máy đóng đinh thường",
-              },
-            ],
+            thickness: "2.0 mm",
+            width: "250 mm",
           },
           {
             idProduct: 6,
@@ -158,12 +126,8 @@ const data = [
             img2: "./img/products/DayTruyenDong/TC-3_.jpg",
             img: "./img/products/DayTruyenDong/TC-3.jpg",
             key: "TC-3",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Máy đóng đinh thường",
-              },
-            ],
+            thickness: "3.0 mm",
+            width: "200 mm",
           },
           {
             idProduct: 6,
@@ -171,12 +135,8 @@ const data = [
             img2: "./img/products/DayTruyenDong/TC-3_.jpg",
             img: "./img/products/DayTruyenDong/TC-3.jpg",
             key: "S-391H",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Máy đóng đinh thường",
-              },
-            ],
+            thickness: "4.0 mm",
+            width: "150 mm",
           },
         ],
         type: 2,
@@ -192,12 +152,8 @@ const data = [
             img2: "./img/products/DayTruyenDong/X40.jpg",
             img: "./img/products/DayTruyenDong/X40(1).jpg",
             key: "X-30",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Máy đóng đinh thường",
-              },
-            ],
+            thickness: "3.0 mm",
+            width: "150 mm",
           },
           {
             idProduct: 7,
@@ -205,12 +161,8 @@ const data = [
             img2: "./img/products/DayTruyenDong/X40.jpg",
             img: "./img/products/DayTruyenDong/X40(1).jpg",
             key: "X-40",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Máy đóng đinh thường",
-              },
-            ],
+            thickness: "4.0 mm",
+            width: "150 mm",
           },
           {
             idProduct: 7,
@@ -218,12 +170,8 @@ const data = [
             img2: "./img/products/DayTruyenDong/X40.jpg",
             img: "./img/products/DayTruyenDong/X40(1).jpg",
             key: "X-60",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Máy đóng đinh thường",
-              },
-            ],
+            thickness: "6.0 mm",
+            width: "150 mm",
           },
         ],
         type: 2,
@@ -239,12 +187,22 @@ const data = [
             img2: "./img/products/DayTruyenDong/LA-1_.jpg",
             img: "./img/products/DayTruyenDong/LA-1.jpg",
             key: "LA-1",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Máy đóng đinh thường",
-              },
-            ],
+            thickness: "6.0 mm",
+            width: "150 mm",
+          },
+        ],
+        type: 2,
+      },
+      {
+        id: 9,
+        name: "Dây Phi",
+        img: "./img/products/DayTruyenDong/DayPhi.jpg",
+        children: [
+          {
+            idProduct: 9,
+            name: "Dây Phi",
+            img: "./img/products/DayTruyenDong/DayPhi.jpg",
+            key: "Dây Phi",
           },
         ],
         type: 2,

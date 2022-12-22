@@ -655,9 +655,10 @@ ol {
 
 .single-slider-item h2 {
   color: #fff;
-  font-size: 96px;
+  font-size: 50px;
   font-weight: 400;
   margin-bottom: 28px;
+  margin-top: 50px;
 }
 
 .single-slider-item .primary-btn,
@@ -671,7 +672,6 @@ ol {
 .hero-items .owl-item.active .single-slider-item h1,
 .hero-items .owl-item.active .single-slider-item h2,
 .hero-items .owl-item.active .single-slider-item .primary-btn {
-  top: 0;
   opacity: 1;
 }
 
@@ -868,6 +868,7 @@ ul.product-controls {
 .single-product-item figure img {
   min-width: 100%;
   height: 220px;
+  object-fit: contain;
   transition: all 0.5s ease;
 }
 
@@ -2435,9 +2436,8 @@ ul.product-controls {
 
 .modal .product-image {
   width: 49%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  object-fit: contain;
+  object-position: center;
 }
 
 .product-image-suggest {
@@ -2466,8 +2466,12 @@ ul.product-controls {
   transition: all 0.5s ease;
 }
 .details-product .active ul {
-  height: 100px;
+  height: 150px;
   margin-top: 10px;
+}
+
+.details-product .active.none {
+  height: 0;
 }
 
 .details-product h4 {
@@ -2518,6 +2522,21 @@ ul.product-controls {
   stroke: #0180c7;
   stroke-width: 10.8658;
   stroke-miterlimit: 54.3289;
+}
+
+/*--------------------- Chịu nhiệt -----------------------*/
+.PTFE ol {
+  list-style-position: inside;
+  text-indent: 30px;
+}
+
+.PTFE ul {
+  list-style-position: inside;
+  text-indent: 50px;
+}
+
+.PTFE .details-product .active ul {
+  height: 100%;
 }
 
 /* ---------------------------------- Responsive Media Styles ---------------------------------*/
@@ -2908,6 +2927,10 @@ ul.product-controls {
   }
   .details-product {
     height: 65%;
+  }
+
+  .single-slider-item h2 {
+    font-size: 30px;
   }
 }
 

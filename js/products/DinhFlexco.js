@@ -44,6 +44,26 @@ const data = [
         type: 2,
       },
       {
+        id: 7,
+        name: "Bộ đóng đinh bản lề.",
+        img: "./img/products/Dinh/BoDongDinhBanLe.jpg",
+        children: [
+          {
+            idProduct: 1,
+            name: "Bộ đóng đinh bản lề.",
+            img: "./img/products/Dinh/BoDongDinhBanLe.jpg",
+            key: "Bộ đóng đinh bản lề.",
+            characteristics: [
+              {
+                color: "Đen",
+                Specifications: "Máy đóng đinh thường",
+              },
+            ],
+          },
+        ],
+        type: 2,
+      },
+      {
         id: 3,
         name: "Đinh xương cá.",
         img: "./img/products/Dinh/xuongca.jpg",
@@ -51,30 +71,6 @@ const data = [
           {
             idProduct: 1,
             name: "Đinh xương cá.",
-            img: "./img/products/Dinh/xuongca.jpg",
-            key: "Đinh xương cá.",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Đinh xương cá.",
-              },
-            ],
-          },
-          {
-            idProduct: 2,
-            name: "Đinh xương cá 2 .",
-            img: "./img/products/Dinh/xuongca.jpg",
-            key: "Đinh xương cá.",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Đinh xương cá.",
-              },
-            ],
-          },
-          {
-            idProduct: 3,
-            name: "Đinh xương cá 3.",
             img: "./img/products/Dinh/xuongca.jpg",
             key: "Đinh xương cá.",
             characteristics: [
@@ -104,30 +100,6 @@ const data = [
               },
             ],
           },
-          {
-            idProduct: 2,
-            name: "Đinh xương cá 2 .",
-            img: "./img/products/Dinh/dinhdepnoibangtai.jpg",
-            key: "Đinh dẹp nối băng tải.",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Đinh dẹp nối băng tải.",
-              },
-            ],
-          },
-          {
-            idProduct: 3,
-            name: "Đinh xương cá 3.",
-            img: "./img/products/Dinh/dinhdepnoibangtai.jpg",
-            key: "Đinh dẹp nối băng tải.",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Đinh dẹp nối băng tải.",
-              },
-            ],
-          },
         ],
         type: 2,
       },
@@ -148,30 +120,6 @@ const data = [
               },
             ],
           },
-          {
-            idProduct: 2,
-            name: "Đinh bản lề RS125 2 .",
-            img: "./img/products/Dinh/banlers125.jpg",
-            key: "Đinh bản lề RS125.",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Đinh bản lề RS125.",
-              },
-            ],
-          },
-          {
-            idProduct: 3,
-            name: "Đinh bản lề RS125 3.",
-            img: "./img/products/Dinh/banlers125.jpg",
-            key: "Đinh bản lề RS125.",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Đinh bản lề RS125.",
-              },
-            ],
-          },
         ],
         type: 2,
       },
@@ -183,30 +131,6 @@ const data = [
           {
             idProduct: 1,
             name: "Đinh bản lề nhựa.",
-            img: "./img/products/Dinh/banlenhua4.jpg",
-            key: "Đinh bản lề nhựa.",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Đinh bản lề nhựa.",
-              },
-            ],
-          },
-          {
-            idProduct: 2,
-            name: "Đinh bản lề nhựa 2 .",
-            img: "./img/products/Dinh/banlenhua4.jpg",
-            key: "Đinh bản lề nhựa.",
-            characteristics: [
-              {
-                color: "Đen",
-                Specifications: "Đinh bản lề nhựa.",
-              },
-            ],
-          },
-          {
-            idProduct: 3,
-            name: "Đinh bản lề nhựa 3.",
             img: "./img/products/Dinh/banlenhua4.jpg",
             key: "Đinh bản lề nhựa.",
             characteristics: [

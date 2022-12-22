@@ -9,7 +9,7 @@ function chooseService() {
           document.querySelector(".service-section iframe").style.display =
             "block";
           break;
-        case "3":
+        case "4":
           document.querySelector(".slider-mini").style.display = "flex";
           document.querySelector(".service-section iframe").style.display =
             "none";

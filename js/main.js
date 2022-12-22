@@ -34,27 +34,27 @@ const dataSlider = [
   {
     img: "./img/slide/slide-1.jpg",
     title: "Thế Cao",
-    content: "",
+    content: "Truyền tải sự tín nhiệm",
   },
   {
     img: "./img/slide/slide-2.jpg",
     title: "Thế Cao",
-    content: "",
+    content: "Truyền tải sự tín nhiệm",
   },
   {
     img: "./img/slide/slide-3.jpg",
     title: "Thế Cao",
-    content: "",
+    content: "Truyền tải sự tín nhiệm",
   },
   {
     img: "./img/slide/slide-4.jpg",
     title: "Thế Cao",
-    content: "",
+    content: "Truyền tải sự tín nhiệm",
   },
   {
     img: "./img/slide/slide-5.jpg",
     title: "Thế Cao",
-    content: "",
+    content: "Truyền tải sự tín nhiệm",
   },
 ];
 /*  --------------------------------------------------- data end -------------------------  */
@@ -434,24 +434,20 @@ function loadMenuMini(number) {
     Load Detail Product
 --------------------- */
 function loadDetailProduct(index, item, items, divDetailProduct) {
-  if (index + 1 === item.id) {
-    divDetailProduct.innerHTML += `<div data-index="${index}" class="col-12 details-product-suggest active  ">
+  divDetailProduct.innerHTML += `<div data-index="${index}" class="col-12 details-product-suggest ${
+    index + 1 === item.id ? "active" : ""
+  }  ">
   <h4 class="">${items.name}</h4>
   <ul class="">
-      <li>Màu sắc:</li>
-      <li>Thông số:</li>
+  ${items.material ? `<li>Chất liệu: ${items.material}</li>` : ""}
+  ${items.thickness ? `<li>Độ dày: ${items.thickness}</li> ` : ""}
+  ${items.width ? `<li>Chiều ngang: ${items.width}</li>` : ""}
+  ${items.P ? `<li>P: ${items.P}</li>` : ""}
+  ${items.H ? `<li>H: ${items.H}</li>` : ""}
+  ${items.Ht ? `<li>Ht: ${items.Ht}</li>` : ""}
+  ${items.W ? `<li>W: ${items.W}</li>` : ""}
   </ul>
 </div>`;
-  } else {
-    divDetailProduct.innerHTML += `<div data-index="${index}" class="col-12 details-product-suggest  ">
-    <h4 class="">${items.name}</h4>
-    <ul class="">
-        <li>Màu sắc:</li>
-        <li>Thông số:</li>
-    </ul>
-</div>
-`;
-  }
 }
 
 /*-------------------
@@ -521,6 +517,7 @@ function loadDataProduct(data) {
 
         divProductImage.classList.add("col-lg-9");
         divProductImage.classList.add("col-product-image");
+
         if (item.children[0].img === undefined) {
           divProductImage.innerHTML = `<img style="display: none;" src="" alt="" class="product-image">
           <img style="width: 100%;" src="${item.children[0].img2}" alt="" class="product-image">`;
@@ -549,24 +546,24 @@ function loadDataProduct(data) {
         );
 
         item.children.forEach((items, index) => {
-          if (index === 0) {
-            divDetailProduct.innerHTML += `<div class="col-12 details-product-suggest active">
+          divDetailProduct.innerHTML += `<div  class="col-12 details-product-suggest ${
+            index === 0 ? "active" : ""
+          }">
             <h4 class="">${items.name}</h4>
-            <ul class="">
-                <li>Màu sắc:</li>
-                <li>Thông số:</li>
+            <ul class="" ${
+              item.children.length === 1 ? `style= "height: 100%;"` : ""
+            }>
+              ${items.material ? `<li>Chất liệu: ${items.material}</li>` : ""}
+              ${items.thickness ? `<li>Độ dày: ${items.thickness}</li> ` : ""}
+              ${items.width ? `<li>Chiều ngang: ${items.width}</li>` : ""}
+              ${items.detail ? `<li>${items.detail}</li>` : ""}
+              ${items.P ? `<li>P: ${items.P}</li>` : ""}
+              ${items.H ? `<li>H: ${items.H}</li>` : ""}
+              ${items.Ht ? `<li>Ht: ${items.Ht}</li>` : ""}
+              ${items.W ? `<li>W: ${items.W}</li>` : ""}
+
             </ul>
         </div>`;
-          } else {
-            divDetailProduct.innerHTML += `<div class="col-12 details-product-suggest">
-            <h4 class="">${items.name}</h4>
-            <ul class="">
-                <li>Màu sắc:</li>
-                <li>Thông số:</li>
-            </ul>
-        </div>
-        `;
-          }
         });
 
         const allProduct = document.querySelectorAll(
@@ -661,6 +658,9 @@ function loadDataProduct(data) {
             }
           });
         }
+
+        document.querySelector(".details-product").scrollTop =
+          document.querySelector(".details-product-suggest.active").offsetTop;
 
         const allProduct = document.querySelectorAll(
           ".details-product-suggest"
