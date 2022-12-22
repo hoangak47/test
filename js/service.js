@@ -103,8 +103,6 @@ function dragImage(e) {
   }
 }
 
-function pointSlideMini(index) {}
-
 pointSlideMini(3);
 
 function startSlideMini() {
