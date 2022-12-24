@@ -203,6 +203,35 @@ const data = [
             name: "Dây Phi",
             img: "./img/products/DayTruyenDong/DayPhi.jpg",
             key: "Dây Phi",
+            thickness: "6mm, 8mm, 10mm, 12mm, 16mm",
+          },
+        ],
+        type: 2,
+      },
+      {
+        id: 10,
+        name: "Dụng cụ ép phi",
+        img: "./img/products/DayTruyenDong/MayEpPhi.png",
+        children: [
+          {
+            idProduct: 9,
+            name: "Dụng cụ ép phi",
+            img: "./img/products/DayTruyenDong/MayEpPhi.png",
+            img2: "./img/products/DayTruyenDong/Mayhan.png",
+            key: "Dụng cụ ép phi",
+
+            detail: `<strong>Máy hàn W-2 (110/220V/150W)</strong>: <br> 
+            Được sử dụng để hàn tất cả các đai Vee và Round, từ 80&deg;A - 60&deg;D <br><br> 
+            <strong>Máy ép Phi</strong>: <br>
+            
+            <h5>Có thể được sử dụng để hàn:</h5>
+
+            <ul style="list-style: inside; height: 100%">
+              <li>Tiết diện đai chữ V từ 8/M đến 30/D</li>
+              <li>Đường kính đai tròn từ 2mm - 20mm (1.8" - 3/4")</li>
+              <li>Đai phẳng rộng tới 50mm (2")</li>
+            </ul>
+            `,
           },
         ],
         type: 2,

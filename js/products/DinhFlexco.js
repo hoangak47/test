@@ -143,6 +143,26 @@ const data = [
         ],
         type: 2,
       },
+      {
+        id: 7,
+        name: "Đinh nhựa xanh.",
+        img: "./img/products/Dinh/DinhNhuaXanh.png",
+        children: [
+          {
+            idProduct: 1,
+            name: "Đinh nhựa xanh.",
+            img: "./img/products/Dinh/DinhNhuaXanh.png",
+            key: "Đinh bản lề nhựa.",
+            characteristics: [
+              {
+                color: "Đen",
+                Specifications: "Đinh nhựa xanh",
+              },
+            ],
+          },
+        ],
+        type: 2,
+      },
     ],
   },
 ];
