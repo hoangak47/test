@@ -325,24 +325,38 @@ function pressKey(e) {
 /*-------------------
     load Data
 --------------------- */
-function loadMenuMini(number) {
+function loadMenuMini(number = null) {
   const ul = document.querySelector(".product-filter-menu");
   let as = "";
 
   let array = "";
   data[0].menu.map((item, index) => {
-    array = data[0].menu.filter((item) => item.parentId === number);
-    if (item.parentId === number) {
-      return (as += `<li data-index="${index}" data-filter=${item.parentId}>${item.title} </li>`);
+    array = data[0].menu.filter((item) => {
+      return item.parentId === number;
+    });
+
+    if (number || number === 0) {
+      if (item.parentId === number) {
+        return (as += `<li data-index="${item.id - 1}" data-filter=${
+          item.parentId
+        }>${item.title} </li>`);
+      } else {
+        return (as += `<li style="display: none" data-index="${item.id}" data-filter=${item.parentId}>${item.title}</li>`);
+      }
     } else {
-      return (as += `<li style="display: none" data-index="${index}" data-filter=${item.parentId}>${item.title}</li>`);
+      return (as += `<li data-index="${item.id}" >${item.title} </li>`);
     }
   });
 
   if (array.length > 1) {
     ul.innerHTML = `<li class="active" data-filter="*" data-index="*">Tất cả</li> ${as}`;
-  } else {
+  } else if (array.length === 1) {
     ul.innerHTML = `<li class="active" style="visibility: hidden" data-filter="*" data-index="*">Tất cả</li>`;
+  } else {
+    ul.innerHTML = `${as}`;
+    document
+      .querySelector(".product-filter-menu li:nth-child(1)")
+      .classList.add("active");
   }
 
   document.querySelectorAll(".product-filter-menu li").forEach((items) => {
@@ -353,6 +367,9 @@ function loadMenuMini(number) {
       items.classList.add("active");
 
       document.querySelectorAll(".product-list .all").forEach((item) => {
+        item.style.display = "none";
+      });
+      document.querySelectorAll(".product-list .XN").forEach((item) => {
         item.style.display = "none";
       });
 
@@ -399,6 +416,15 @@ function loadMenuMini(number) {
               item.style.display = "block";
             });
           break;
+        case "8":
+          document.querySelectorAll(".product-list .XN-TD").forEach((item) => {
+            item.style.display = "block";
+          });
+          break;
+        case "9":
+          document.querySelectorAll(".product-list .XN-DA").forEach((item) => {
+            item.style.display = "block";
+          });
         case "*":
           if (number === 0) {
             document
@@ -480,6 +506,7 @@ function loadDataProduct(data) {
             : "TPU"
           : ""
       );
+
       div.classList.add(
         item.productTypeID !== undefined || item.productTypeID !== null
           ? item.productTypeID === 0
@@ -497,6 +524,11 @@ function loadDataProduct(data) {
             : "TPU"
           : ""
       );
+    } else {
+      if (data[0].type === 2) {
+        div.classList.add("XN");
+        div.classList.add(item.parentId === 8 ? "XN-TD" : "XN-DA");
+      }
     }
 
     div.innerHTML = `<div class="single-product-item"   >
@@ -508,6 +540,12 @@ function loadDataProduct(data) {
       </div>
   </div>`;
     listProduct.appendChild(div);
+
+    if (document.querySelectorAll(".product-list .XN-DA")) {
+      document.querySelectorAll(".product-list .XN-DA").forEach((item) => {
+        item.style.display = "none";
+      });
+    }
 
     if (item.type === 2) {
       div.addEventListener("click", () => {
@@ -632,7 +670,12 @@ function loadDataProduct(data) {
           ".details-product .row"
         );
 
-        if (data[0].type === 2) {
+        if (
+          data[0].type === 2 &&
+          document.querySelector(
+            ".product-filter .product-controls li.product--controls-tab.active"
+          )
+        ) {
           const indexDataset = document.querySelector(
             ".product-filter-menu li.active"
           ).dataset.index;
@@ -654,7 +697,18 @@ function loadDataProduct(data) {
         } else {
           data[0].data.forEach((items, index) => {
             if (items.type === 1) {
-              loadDetailProduct(index, item, items, divDetailProduct);
+              if (document.querySelector(".product-filter-menu li.active")) {
+                if (
+                  parseInt(
+                    document.querySelector(".product-filter-menu li.active")
+                      .dataset.index
+                  ) === items.parentId
+                ) {
+                  loadDetailProduct(index, item, items, divDetailProduct);
+                }
+              } else {
+                loadDetailProduct(index, item, items, divDetailProduct);
+              }
             }
           });
         }

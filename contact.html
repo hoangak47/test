@@ -9,6 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cty TNHH MTV Thế Cao</title>
     <link type="image/x-icon" rel="icon" href="./img/favicon/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
@@ -94,6 +97,11 @@
     </section>
     <!-- Page Add Section End -->
 
+    <!-- Notification Begin -->
+    <div id="toasts"></div>
+
+    <!-- Notification End -->
+
     <!-- Contact Section Begin -->
     <div class="contact-section">
         <div class="container">
@@ -102,17 +110,17 @@
                     <form action="#" class="contact-form">
                         <div class="row">
                             <div class="col-lg-12">
-                                <input type="text" placeholder="Họ tên">
+                                <input name="name" type="text" placeholder="Họ tên">
                             </div>
                             <div class="col-lg-6">
-                                <input type="email" placeholder="E-mail">
+                                <input name="email" type="email" placeholder="E-mail">
                             </div>
                             <div class="col-lg-6">
-                                <input type="tel" placeholder="Số điện thoại">
+                                <input name="phone" type="tel" placeholder="Số điện thoại">
                             </div>
                             <div class="col-lg-12">
-                                <input type="text" placeholder="Tiêu đề">
-                                <textarea placeholder="Nội dung"></textarea>
+                                <input name="title" type="text" placeholder="Tiêu đề">
+                                <textarea name="message" placeholder="Nội dung"></textarea>
                             </div>
                             <div class="col-lg-12 text-right">
                                 <button type="submit">Send message</button>
@@ -237,14 +245,17 @@
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="./js/jquery.slicknav.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/jquery.nice-select.min.js"></script>
+    <script src="./js/mixitup.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="./js/contact.js"></script>
 </body>
 
 </html>

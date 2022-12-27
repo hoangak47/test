@@ -210,15 +210,15 @@ const data = [
       },
       {
         id: 10,
-        name: "Dụng cụ ép phi",
+        name: "Dụng cụ ép phi (Volta)",
         img: "./img/products/DayTruyenDong/MayEpPhi.png",
         children: [
           {
             idProduct: 9,
-            name: "Dụng cụ ép phi",
+            name: "Dụng cụ ép phi (Volta)",
             img: "./img/products/DayTruyenDong/MayEpPhi.png",
             img2: "./img/products/DayTruyenDong/Mayhan.png",
-            key: "Dụng cụ ép phi",
+            key: "Dụng cụ ép phi (Volta)",
 
             detail: `<strong>Máy hàn W-2 (110/220V/150W)</strong>: <br> 
             Được sử dụng để hàn tất cả các đai Vee và Round, từ 80&deg;A - 60&deg;D <br><br> 
