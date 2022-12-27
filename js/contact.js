@@ -20,29 +20,19 @@ document
       title,
       message,
     };
-
-    const link =
-      "mailto:nghi.impossible@gmail.com" +
-      "?cc=nguyenhoang41911@gmail.com" +
-      "&subject=" +
-      encodeURIComponent(title) +
-      "&body=" +
-      encodeURIComponent(
-        "Tên: " +
-          name +
-          "\n" +
-          "Email: " +
-          email +
-          "\n" +
-          "Số điện thoại: " +
-          phone +
-          "\n" +
-          "Nội dung: " +
-          message
-      );
-
-    window.location.href = link;
-    createToast("success");
+    Email.send({
+      SecureToken: "8e400b2e-4329-4c57-a90e-f5301533d9b9",
+      To: "nguyenhoang41911@gmail.com",
+      From: "dinhnv391@gmail.com",
+      Subject: title,
+      Body: `
+        <h1>Thông tin liên hệ</h1>
+        <p>Tên: ${name}</p>
+        <p>Email: ${email}</p>
+        <p>Số điện thoại: ${phone}</p>
+        <p>Nội dung: ${message}</p>
+        `,
+    }).then((message) => createToast("success"));
   });
 const toasts = {
   success: {
