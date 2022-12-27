@@ -22,7 +22,7 @@ document
     };
     Email.send({
       SecureToken: "8e400b2e-4329-4c57-a90e-f5301533d9b9",
-      To: "phongkinhdoanh@thecaovn.com",
+      To: "lamtanvu232@gmail.com",
       From: "dinhnv391@gmail.com",
       Subject: title,
       Body: `
