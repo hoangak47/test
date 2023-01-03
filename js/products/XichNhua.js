@@ -1,15 +1,8 @@
-const datas = [
-  {
-    title: "Băng tải Xích nhựa",
-    type: 1,
-    data: [],
-  },
-];
-
 const data = [
   {
     title: "Sản phẩm PVC",
     type: 2,
+    product: "XN",
     menu: [
       {
         id: 8,

@@ -32,27 +32,27 @@ const dataChatBox = [
 
 const dataSlider = [
   {
-    img: "./img/slide/slide-1.jpg",
+    img: "../img/slide/slide-1.jpg",
     title: "Thế Cao",
     content: "Truyền tải sự tín nhiệm",
   },
   {
-    img: "./img/slide/slide-2.jpg",
+    img: "../img/slide/slide-2.jpg",
     title: "Thế Cao",
     content: "Truyền tải sự tín nhiệm",
   },
   {
-    img: "./img/slide/slide-3.jpg",
+    img: "../img/slide/slide-3.jpg",
     title: "Thế Cao",
     content: "Truyền tải sự tín nhiệm",
   },
   {
-    img: "./img/slide/slide-4.jpg",
+    img: "../img/slide/slide-4.jpg",
     title: "Thế Cao",
     content: "Truyền tải sự tín nhiệm",
   },
   {
-    img: "./img/slide/slide-5.jpg",
+    img: "../img/slide/slide-5.jpg",
     title: "Thế Cao",
     content: "Truyền tải sự tín nhiệm",
   },
@@ -270,7 +270,7 @@ function createLogo() {
   const a = document.createElement("a");
   a.href = "./index.html";
   const img = document.createElement("img");
-  img.src = "./img/logo.png";
+  img.src = "../img/logo.png";
   img.alt = "";
   a.appendChild(img);
   logo.appendChild(a);
@@ -330,23 +330,25 @@ function loadMenuMini(number = null) {
   let as = "";
 
   let array = "";
-  data[0].menu.map((item, index) => {
-    array = data[0].menu.filter((item) => {
-      return item.parentId === number;
-    });
+  data[0].menu
+    ? data[0].menu.map((item, index) => {
+        array = data[0].menu.filter((item) => {
+          return item.parentId === number;
+        });
 
-    if (number || number === 0) {
-      if (item.parentId === number) {
-        return (as += `<li data-index="${item.id - 1}" data-filter=${
-          item.parentId
-        }>${item.title} </li>`);
-      } else {
-        return (as += `<li style="display: none" data-index="${item.id}" data-filter=${item.parentId}>${item.title}</li>`);
-      }
-    } else {
-      return (as += `<li data-index="${item.id}" >${item.title} </li>`);
-    }
-  });
+        if (number || number === 0) {
+          if (item.parentId === number) {
+            return (as += `<li data-index="${item.id - 1}" data-filter=${
+              item.parentId
+            }>${item.title} </li>`);
+          } else {
+            return (as += `<li style="display: none" data-index="${item.id}" data-filter=${item.parentId}>${item.title}</li>`);
+          }
+        } else {
+          return (as += `<li data-index="${item.id}" >${item.title} </li>`);
+        }
+      })
+    : "";
 
   if (array.length > 1) {
     ul.innerHTML = `<li class="active" data-filter="*" data-index="*">Tất cả</li> ${as}`;
@@ -354,9 +356,11 @@ function loadMenuMini(number = null) {
     ul.innerHTML = `<li class="active" style="visibility: hidden" data-filter="*" data-index="*">Tất cả</li>`;
   } else {
     ul.innerHTML = `${as}`;
-    document
-      .querySelector(".product-filter-menu li:nth-child(1)")
-      .classList.add("active");
+    try {
+      document
+        .querySelector(".product-filter-menu li:nth-child(1)")
+        .classList.add("active");
+    } catch (error) {}
   }
 
   document.querySelectorAll(".product-filter-menu li").forEach((items) => {
@@ -472,6 +476,7 @@ function loadDetailProduct(index, item, items, divDetailProduct) {
   ${items.H ? `<li>H: ${items.H}</li>` : ""}
   ${items.Ht ? `<li>Ht: ${items.Ht}</li>` : ""}
   ${items.W ? `<li>W: ${items.W}</li>` : ""}
+  ${items.video ? `<li>${items.video}</li>` : ""}
   </ul>
 </div>`;
 }
@@ -525,7 +530,7 @@ function loadDataProduct(data) {
           : ""
       );
     } else {
-      if (data[0].type === 2) {
+      if (data[0].type === 2 && data[0].product === "XN") {
         div.classList.add("XN");
         div.classList.add(item.parentId === 8 ? "XN-TD" : "XN-DA");
       }
@@ -599,6 +604,7 @@ function loadDataProduct(data) {
               ${items.H ? `<li>H: ${items.H}</li>` : ""}
               ${items.Ht ? `<li>Ht: ${items.Ht}</li>` : ""}
               ${items.W ? `<li>W: ${items.W}</li>` : ""}
+              ${items.video ? `<li>${items.video}</li>` : ""}
 
             </ul>
         </div>`;

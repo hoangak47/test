@@ -90,6 +90,16 @@ p {
   margin: 0 0 15px 0;
 }
 
+pre {
+  color: #000;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-weight: 500;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
 img {
   max-width: 100%;
 }
@@ -332,13 +342,22 @@ ol {
   padding-right: 45px;
 }
 
+.inner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .inner-header .logo {
-  float: left;
   margin-top: -10px;
 }
 
 .logo img {
   max-width: 80%;
+}
+
+.logo .logo-mobile {
+  display: none;
 }
 
 .inner-header .header-right {
@@ -407,11 +426,6 @@ ol {
   content: "/";
 }
 
-.inner-header .main-menu {
-  float: right;
-  margin-right: 20px;
-}
-
 .inner-header .main-menu ul li {
   display: inline-block;
   margin-left: 60px;
@@ -471,6 +485,10 @@ ol {
   transition: all 0.4s;
   -webkit-box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.2);
   box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.2);
+}
+
+.inner-header .main-menu ul li .sub-menu.career {
+  width: 270px;
 }
 
 .inner-header .main-menu ul li .sub-menu li {
@@ -589,6 +607,10 @@ ol {
 .header-info .header-item .comp-name {
   color: var(--main-color);
   font-weight: 700;
+}
+
+.header-info .logo {
+  display: none;
 }
 
 /*---------------------
@@ -2847,6 +2869,13 @@ ul.product-controls {
     font-weight: 600;
     padding-top: 3px;
   }
+
+  .logo a {
+    display: none;
+  }
+  .logo .logo-mobile {
+    display: block;
+  }
 }
 
 /* Tablet Device : 768px */
@@ -2882,6 +2911,17 @@ ul.product-controls {
   }
   .inner-header .user-access {
     display: none;
+  }
+  .inner-header .logo {
+    max-width: 130px;
+  }
+  .header-info .logo {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  .header-info .logo img {
+    max-width: 50%;
   }
   .page-add .page-breadcrumb {
     margin-bottom: 20px;
@@ -2959,6 +2999,13 @@ ul.product-controls {
 
   .details-product {
     height: 65%;
+  }
+
+  .logo a {
+    display: none;
+  }
+  .logo .logo-mobile {
+    display: block;
   }
 }
 
