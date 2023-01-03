@@ -2804,6 +2804,21 @@ ul.product-controls {
   height: 100%;
 }
 
+/*--------------------- download-catalog -----------------------*/
+.catalog-download span {
+  font-size: 15px;
+  color: #7b7b7b;
+  font-weight: 400;
+  line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 15px 0;
+  transition: all 0.3s ease;
+}
+
+.catalog-download span:hover {
+  color: #000;
+}
+
 /* ---------------------------------- Responsive Media Styles ---------------------------------*/
 
 @media only screen and (min-width: 1500px) and (max-width: 1920px) {
