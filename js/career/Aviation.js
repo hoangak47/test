@@ -27,7 +27,7 @@ document
     embed.width = "100%";
     embed.height = "100%";
     embed.src =
-      "https://www.thecaovn.space/img/career/BanhXe/catalo ngành sản xuất bánh xe.pdf";
+      "https://www.thecaovn.space/img/career/HangKhong/catalo ngành hàng không.pdf";
     contentModal.appendChild(embed);
 
     modal.classList.add("show");

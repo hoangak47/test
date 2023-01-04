@@ -2,7 +2,26 @@ const data = [
   {
     title: "",
     type: 2,
-    data: [],
+    data: [
+      {
+        id: 1,
+        name: "Hình ảnh máy chạy bộ",
+        img: "../img/career/NganhTheThao/hình ảnh máy chạy bộ.jpg",
+        type: 1,
+      },
+      {
+        id: 2,
+        name: "Hình ảnh máy chạy bộ",
+        img: "../img/career/NganhTheThao/hình ảnh máy chạy bộ2.jpg",
+        type: 1,
+      },
+      {
+        id: 3,
+        name: "Hình ảnh máy chạy bộ",
+        img: "../img/career/NganhTheThao/hình ảnh máy chạy bộ3.jpg",
+        type: 1,
+      },
+    ],
   },
 ];
 
@@ -27,7 +46,7 @@ document
     embed.width = "100%";
     embed.height = "100%";
     embed.src =
-      "https://www.thecaovn.space/img/career/BanhXe/catalo ngành sản xuất bánh xe.pdf";
+      "https://www.thecaovn.space/img/career/NganhTheThao/catalo băng tải chạy bộ.pdf";
     contentModal.appendChild(embed);
 
     modal.classList.add("show");

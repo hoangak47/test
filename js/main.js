@@ -752,8 +752,13 @@ function clickOutsideCloseModal() {
   document.querySelector(".modal").addEventListener("click", function (e) {
     if (!e.target.closest(".modal-content")) {
       document.querySelector(".modal").classList.remove("show");
-      document.querySelector(".details-product").remove();
-      document.querySelector(".col-product-image").remove();
+      try {
+        document.querySelector("embed").remove();
+      } catch (error) {}
+      try {
+        document.querySelector(".details-product").remove();
+        document.querySelector(".col-product-image").remove();
+      } catch (error) {}
     }
   });
 }
