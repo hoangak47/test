@@ -857,8 +857,16 @@ c-166.4,0-301.3-134.9-301.3-301.3V480.2C188.1,313.8,323,178.9,489.4,178.9z" />
 }
 
 /*--------------------
-click Menu Mini
+check screen modal
 --------------------*/
+
+function checkScreenModal() {
+  if (window.screen.width > 768) {
+    document.querySelector(".modal-content").style.height = "100vh";
+  } else {
+    document.querySelector(".modal-content").style.height = "85vh";
+  }
+}
 
 try {
   createLogo();

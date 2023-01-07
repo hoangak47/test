@@ -82,7 +82,7 @@ document
   .querySelector(".catalog-download span")
   .addEventListener("click", (e) => {
     const modal = document.querySelector(".modal");
-    document.querySelector(".modal-content").style.height = "100vh";
+    checkScreenModal();
     const contentModal = document.querySelector(".modal-content .row");
     const embed = document.createElement("embed");
     embed.width = "100%";
