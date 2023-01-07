@@ -27,7 +27,7 @@ document
     embed.width = "100%";
     embed.height = "100%";
     embed.src =
-      "https://www.thecaovn.space/img/career/BanhXe/catalo ngành sản xuất bánh xe.pdf";
+      "https://drive.google.com/viewerng/viewer?embedded=true&url=https://www.thecaovn.space/img/career/BanhXe/catalo ngành sản xuất bánh xe.pdf";
     contentModal.appendChild(embed);
 
     modal.classList.add("show");
