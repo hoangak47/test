@@ -864,7 +864,7 @@ function checkScreenModal() {
   if (window.screen.width > 768) {
     document.querySelector(".modal-content").style.height = "100vh";
   } else {
-    document.querySelector(".modal-content").style.height = "85vh";
+    document.querySelector(".modal-content").style.height = "80vh";
   }
 }
 
