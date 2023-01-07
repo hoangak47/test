@@ -82,7 +82,7 @@ document
     embed.width = "100%";
     embed.height = "100%";
     embed.src =
-      "https://www.thecaovn.space/img/career/NganhGo/catalo ngành gỗ.pdf";
+      "https://drive.google.com/viewerng/viewer?embedded=true&url=https://www.thecaovn.space/img/career/NganhGo/catalo ngành gỗ.pdf";
     contentModal.appendChild(embed);
 
     modal.classList.add("show");

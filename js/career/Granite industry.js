@@ -52,7 +52,7 @@ document
     embed.width = "100%";
     embed.height = "100%";
     embed.src =
-      "https://www.thecaovn.space/img/career/NganhDaGranite/catalo PVC, PU .pdf";
+      "https://drive.google.com/viewerng/viewer?embedded=true&url=https://www.thecaovn.space/img/career/NganhDaGranite/catalo PVC, PU .pdf";
     contentModal.appendChild(embed);
 
     modal.classList.add("show");
