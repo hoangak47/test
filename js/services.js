@@ -14,6 +14,20 @@ function chooseService() {
       document.querySelector(".service-section .notepaper").style.display =
         "none";
 
+      document
+        .querySelector(".iframe-factory")
+        .contentWindow.postMessage(
+          '{"event":"command", "func":"stopVideo", "args":""}',
+          "*"
+        );
+
+      document
+        .querySelector(".iframe-nurture")
+        .contentWindow.postMessage(
+          '{"event":"command", "func":"stopVideo", "args":""}',
+          "*"
+        );
+
       switch (item.dataset.service) {
         case "1":
           document.querySelector(
